@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 /* ══════════════════════════════════════════════════════════════════════════
    1. Base tokens — verbatim from the client export (DESIGN.md §1)
    ══════════════════════════════════════════════════════════════════════ */
@@ -395,7 +394,7 @@ textarea.input { min-height: 110px; resize: vertical; }
   position: absolute; top: -35%; right: -5%; width: 66vw; height: 66vw; pointer-events: none;
   background: radial-gradient(circle, color-mix(in srgb, var(--color-accent) 22%, transparent) 0%, transparent 60%);
 }
-.scanline {
+.scanline, .scan {
   position: absolute; left: 0; right: 0; height: 2px;
   background: linear-gradient(to right, transparent, var(--color-accent), transparent);
   opacity: .45; animation: sweep 7s linear infinite;

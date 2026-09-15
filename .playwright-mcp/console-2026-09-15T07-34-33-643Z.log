@@ -1,0 +1,12 @@
+[     820ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    1333ms] [LOG] [HMR] connected @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    1424ms] [WARNING] Image with src "/ektar-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    1732ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    1918ms] [LOG] [Fast Refresh] done in 294ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    2254ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    2334ms] [LOG] [Fast Refresh] done in 191ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   12258ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   12382ms] [LOG] [Fast Refresh] done in 235ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   13981ms] [WARNING] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   22244ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   22467ms] [LOG] [Fast Refresh] done in 326ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297

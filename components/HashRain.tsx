@@ -55,7 +55,11 @@ export default function HashRain({ className = "hrain" }: { className?: string }
 
     function makeRow(seed: boolean): Row {
       return {
-        head: seed ? -Math.random() * cells * 1.2 : -Math.random() * 14,
+        // On first paint, scatter heads across the full width so the rain is
+        // already filling the canvas immediately — not crawling in from the
+        // left over the next several seconds. Only rows that respawn after
+        // scrolling off (seed: false) start just offscreen to the left.
+        head: seed ? Math.random() * cells : -Math.random() * 14,
         speed: 0.02 + Math.random() * 0.05,
         trail: 10 + Math.floor(Math.random() * 22),
         glyphs: Array.from({ length: cells }, g),
