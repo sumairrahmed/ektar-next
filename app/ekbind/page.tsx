@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ProductHero from "@/components/ProductHero";
 import LedgerBackground from "@/components/LedgerBackground";
+import SimTowerViz from "@/components/SimTowerViz";
 import TierBadge from "@/components/TierBadge";
 import { hero, ledgerRows, quickFacts, howItWorks, whyNow, closing } from "@/lib/content/products/ekbind";
 
@@ -27,15 +28,7 @@ export default function EkBindPage() {
               <span>Verified</span>
             </div>
             <div className="vbody">
-              <div className="nodes">
-                <div className="node">
-                  <span>Device</span>Banking app
-                </div>
-                <div className="dashlink" />
-                <div className="node">
-                  <span>Operator</span>Network check
-                </div>
-              </div>
+              <SimTowerViz />
               <div className="vrow">
                 <span className="ic">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
