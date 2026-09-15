@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 /* ══════════════════════════════════════════════════════════════════════════
    1. Base tokens — verbatim from the client export (DESIGN.md §1)
    ══════════════════════════════════════════════════════════════════════ */
@@ -768,7 +769,7 @@ textarea.input { min-height: 110px; resize: vertical; }
 
 /* ekBind/ekSign/ekSell hero background — scrolling ledger of masked rows */
 .ledgerbg { position: absolute; top: 0; right: 0; bottom: 0; left: 44%; overflow: hidden; pointer-events: none; mask-image: linear-gradient(to right, transparent 0, rgba(0,0,0,.35) 14%, #000 46%); -webkit-mask-image: linear-gradient(to right, transparent 0, rgba(0,0,0,.35) 14%, #000 46%); }
-.ledgerbg .roll { display: flex; flex-direction: column; gap: 10px; padding: 18px 0; animation: ledgerdrift 170s linear infinite; will-change: transform; }
+.ledgerbg .roll { display: flex; flex-direction: column; gap: 10px; padding: 18px 0; animation: ledgerdrift 90s linear infinite; will-change: transform; }
 .ledgerbg .lr { display: flex; gap: 22px; font-size: 12.5px; line-height: 1.6; letter-spacing: 1.8px; white-space: nowrap; color: color-mix(in srgb, var(--paper) 13%, transparent); transition: color 1.4s ease; }
 .ledgerbg .lr.live { color: var(--accent-lt); background: color-mix(in srgb, var(--color-accent) 9%, transparent); border-bottom: 2px solid color-mix(in srgb, var(--color-accent) 70%, transparent); animation: liveglow 5s ease-in-out infinite; }
 @keyframes ledgerdrift { to { transform: translateY(-50%); } }
