@@ -2,8 +2,10 @@
 
 export const hero = {
   statusText: "ekPulse · Protect the User & App",
-  titleLine1: "The way someone types and",
-  titleLine2: "moves is as unique as a fingerprint",
+  titleLine1: "The way someone",
+  titleLine2: "types and",
+  titleLine3: "moves is",
+  titleEmphasis: "as unique as a fingerprint",
   description:
     "ekPulse learns how a genuine customer holds their phone, types, and swipes — then flags the moment those patterns don't match, even if every password and code was entered correctly.",
   badge: "Building now",

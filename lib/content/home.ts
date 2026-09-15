@@ -10,7 +10,9 @@ export const hero = {
   secondaryCta: { label: "See the suite", href: "#solutions" },
 };
 
-// The cycle3 tri-scene hero visual (DESIGN.md §4.1)
+// The cycle3 tri-scene hero visual (DESIGN.md §4.1). Order must match
+// hero.rotatorWords ("the User", "the App", "the Device") — HeroReel
+// drives both the rotator text and this scene from one shared index.
 export const heroScenes = [
   {
     label: "Protect the user",
@@ -23,16 +25,6 @@ export const heroScenes = [
     ],
   },
   {
-    label: "Protect the device",
-    context: "Session check",
-    verifiedTitle: "Device bound",
-    verifiedDetail: "Same phone · same SIM",
-    chips: [
-      { text: "SIM swap attempt", flag: "blocked" },
-      { text: "Rooted device", flag: "denied" },
-    ],
-  },
-  {
     label: "Protect the app",
     context: "Runtime check",
     verifiedTitle: "App verified",
@@ -40,6 +32,16 @@ export const heroScenes = [
     chips: [
       { text: "Overlay attack", flag: "blocked" },
       { text: "Remote access tool", flag: "suspended" },
+    ],
+  },
+  {
+    label: "Protect the device",
+    context: "Session check",
+    verifiedTitle: "Device bound",
+    verifiedDetail: "Same phone · same SIM",
+    chips: [
+      { text: "SIM swap attempt", flag: "blocked" },
+      { text: "Rooted device", flag: "denied" },
     ],
   },
 ];

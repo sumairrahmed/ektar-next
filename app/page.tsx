@@ -1,6 +1,5 @@
 import Link from "next/link";
-import HeroRotator from "@/components/HeroRotator";
-import HeroCycle from "@/components/HeroCycle";
+import HeroReel from "@/components/HeroReel";
 import HashRain from "@/components/HashRain";
 import AnnouncementStrip from "@/components/AnnouncementStrip";
 import TieredSolutionsPanel from "@/components/TieredSolutionsPanel";
@@ -19,12 +18,7 @@ export default function Home() {
         <div className="scanline" />
         <div className="wrap">
           <div className="hero">
-            <div className="reveal">
-              <p className="status mono">
-                <span className="dot" />
-                {hero.statusText}
-              </p>
-              <HeroRotator words={hero.rotatorWords} />
+            <HeroReel statusText={hero.statusText} words={hero.rotatorWords} scenes={heroScenes}>
               <h1 className="display">
                 <span className="line">{hero.h1Lines[0]}</span>
                 <span className="line">
@@ -40,10 +34,7 @@ export default function Home() {
                   {hero.secondaryCta.label}
                 </Link>
               </div>
-            </div>
-            <div className="reveal">
-              <HeroCycle scenes={heroScenes} />
-            </div>
+            </HeroReel>
           </div>
         </div>
       </section>

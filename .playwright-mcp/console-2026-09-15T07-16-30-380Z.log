@@ -1,0 +1,31 @@
+[     143ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     377ms] [LOG] [Fast Refresh] done in 340ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     702ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    1053ms] [LOG] [HMR] connected @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    1161ms] [WARNING] Image with src "/ektar-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    3136ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    3170ms] [LOG] [Fast Refresh] done in 149ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    8269ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    8405ms] [LOG] [Fast Refresh] done in 242ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   18280ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   18420ms] [LOG] [Fast Refresh] done in 251ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   28286ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   28437ms] [LOG] [Fast Refresh] done in 269ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   38301ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   38488ms] [LOG] [Fast Refresh] done in 297ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   48305ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   48470ms] [LOG] [Fast Refresh] done in 297ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   58304ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   58643ms] [LOG] [Fast Refresh] done in 454ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   68387ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   69059ms] [LOG] [Fast Refresh] done in 794ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   78311ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   78690ms] [LOG] [Fast Refresh] done in 502ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   88329ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   88891ms] [LOG] [Fast Refresh] done in 687ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   90036ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   92695ms] [LOG] [Fast Refresh] done in 2582ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   95887ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   95954ms] [LOG] [Fast Refresh] done in 169ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   98308ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   98488ms] [LOG] [Fast Refresh] done in 311ms @ http://localhost:60632/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 /* ══════════════════════════════════════════════════════════════════════════
    1. Base tokens — verbatim from the client export (DESIGN.md §1)
    ══════════════════════════════════════════════════════════════════════ */
@@ -430,9 +431,9 @@ textarea.input { min-height: 110px; resize: vertical; }
 }
 .display .line { display: block; }
 .display em { font-style: normal; color: var(--accent-lt); }
-/* Protect the Device hero title — sized to match client-provided mock, this page only */
-.display.pdev-title, .display.papp-title { font-size: 48px; }
-@media (max-width: 1050px) { .display.pdev-title, .display.papp-title { font-size: 30px; } }
+/* Protect the Device / Protect the App / ekPulse hero titles — sized to match client-provided mock */
+.display.pdev-title, .display.papp-title, .display.pulse-title { font-size: 48px; }
+@media (max-width: 1050px) { .display.pdev-title, .display.papp-title, .display.pulse-title { font-size: 30px; } }
 .sub { font-size: 17.5px; line-height: var(--leading); max-width: 52ch; color: var(--dim); margin: calc(1.2 * var(--leading)) 0 0; }
 .row { display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: calc(1.4 * var(--leading)); }
 
@@ -489,6 +490,13 @@ textarea.input { min-height: 110px; resize: vertical; }
 .cycle .chips { margin-top: 16px; height: auto; }
 @keyframes cycle3 { 0%, 3% { opacity: 0; } 6%, 27% { opacity: 1; } 30%, 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .cycle .scene { animation: none; opacity: 0; } .cycle .scene:first-child { opacity: 1; } }
+
+/* JS-controlled variant (homepage): scene visibility follows `activeIndex`, driven by
+   the same shared timer as the "Protect the X" rotator text, instead of looping on its
+   own independent CSS animation-delay schedule. */
+.dev-body.js-cycle .scene { animation: none; opacity: 0; transition: opacity .5s ease; }
+.dev-body.js-cycle .scene.active { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .dev-body.js-cycle .scene { transition: none; } }
 
 .cycle2 { position: relative; min-height: 452px; display: flex; align-items: center; justify-content: center; }
 .cycle2 .scene { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; opacity: 0; animation: cyc2 8s infinite; }

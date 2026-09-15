@@ -37,10 +37,14 @@ export default function EkPulsePage() {
           <>
             <span className="line">{hero.titleLine1}</span>
             <span className="line">{hero.titleLine2}</span>
+            <span className="line">
+              {hero.titleLine3} <em>{hero.titleEmphasis}</em>
+            </span>
           </>
         }
         description={hero.description}
         tierLine={hero.badge}
+        titleClassName="pulse-title"
         visual={<PulseViz />}
       />
 

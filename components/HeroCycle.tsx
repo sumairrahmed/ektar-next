@@ -6,10 +6,21 @@ export type CycleScene = {
   chips: { text: string; flag: string }[];
 };
 
-// The cycle3/cycle2 cross-fade hero visual (DESIGN.md §4.1) — pure CSS
-// animation, no JS state needed. `variant="cycle2"` is the 2-scene surface-
-// page version (protect-the-user); default is the homepage's 3-scene loop.
-export default function HeroCycle({ scenes, variant = "cycle" }: { scenes: CycleScene[]; variant?: "cycle" | "cycle2" }) {
+// The cycle3/cycle2 cross-fade hero visual (DESIGN.md §4.1). By default this
+// is a pure CSS animation, no JS state needed — used as-is on surface pages.
+// On the homepage it's driven by `activeIndex` instead (from HeroReel), so
+// the visible scene stays in sync with the "Protect the X" rotator text
+// rather than looping on its own independent timer.
+export default function HeroCycle({
+  scenes,
+  variant = "cycle",
+  activeIndex,
+}: {
+  scenes: CycleScene[];
+  variant?: "cycle" | "cycle2";
+  activeIndex?: number;
+}) {
+  const controlled = activeIndex !== undefined;
   return (
     <div className="shield-stack">
       <span className="ring r1" />
@@ -24,9 +35,9 @@ export default function HeroCycle({ scenes, variant = "cycle" }: { scenes: Cycle
             <i />
           </span>
         </div>
-        <div className={`dev-body ${variant}`}>
-          {scenes.map((scene) => (
-            <div className="scene" key={scene.label}>
+        <div className={`dev-body ${variant}${controlled ? " js-cycle" : ""}`}>
+          {scenes.map((scene, i) => (
+            <div className={`scene${controlled && i === activeIndex ? " active" : ""}`} key={scene.label}>
               <p className="dev-label">{scene.label}</p>
               <p className="dev-app">{scene.context}</p>
               <div className="verified">

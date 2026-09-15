@@ -1,0 +1,140 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - link "Ektar home" [ref=f3e3] [cursor=pointer]:
+      - /url: /
+      - img "Ektar" [ref=f3e4]
+    - generic [ref=f3e5]: Systems live
+    - navigation [ref=f3e7]:
+      - link "Home" [ref=f3e9] [cursor=pointer]:
+        - /url: /
+      - link "Protect the User" [ref=f3e11] [cursor=pointer]:
+        - /url: /protect-the-user
+      - link "Protect the Device" [ref=f3e13] [cursor=pointer]:
+        - /url: /protect-the-device
+      - link "Protect the App" [ref=f3e15] [cursor=pointer]:
+        - /url: /protect-the-app
+      - link "About" [ref=f3e17] [cursor=pointer]:
+        - /url: /about
+    - button "Toggle theme" [ref=f3e18] [cursor=pointer]
+    - link "Book a demo" [ref=f3e21] [cursor=pointer]:
+      - /url: /contact
+  - generic [ref=f3e22]:
+    - generic [ref=f3e24]: Seven products
+    - generic [ref=f3e26]: One decision engine — ekRules weighs every signal the three surfaces emit.
+  - generic [ref=f3e27]:
+    - generic [ref=f3e31]:
+      - generic [ref=f3e32]:
+        - paragraph [ref=f3e33]: ekPulse · Protect the User & App
+        - heading "The way someone types and moves is as unique as a fingerprint" [level=1] [ref=f3e35]:
+          - generic [ref=f3e36]: The way someone types and
+          - generic [ref=f3e37]: moves is as unique as a fingerprint
+        - paragraph [ref=f3e38]: ekPulse learns how a genuine customer holds their phone, types, and swipes — then flags the moment those patterns don't match, even if every password and code was entered correctly.
+        - link "Book a demo" [ref=f3e40] [cursor=pointer]:
+          - /url: /contact
+        - paragraph [ref=f3e41]: Building now
+      - generic [ref=f3e47]:
+        - generic [ref=f3e48]: 09:41
+        - generic [ref=f3e54]:
+          - paragraph [ref=f3e55]: Continuous behaviour check
+          - paragraph [ref=f3e63]: Pattern matched
+          - paragraph [ref=f3e64]: Reviewing signal…
+    - generic [ref=f3e65]:
+      - generic [ref=f3e66]:
+        - generic [ref=f3e67]: Capabilities
+        - heading "A signal a stolen credential can't fake" [level=2] [ref=f3e68]
+        - generic [ref=f3e69]:
+          - generic [ref=f3e70]:
+            - paragraph [ref=f3e73]: Works silently in the background
+            - paragraph [ref=f3e74]: No extra step for the customer — it learns from normal use of the app.
+          - generic [ref=f3e75]:
+            - paragraph [ref=f3e80]: Catches what passwords can't
+            - paragraph [ref=f3e81]: A stolen credential still won't behave like the real customer.
+          - generic [ref=f3e82]:
+            - paragraph [ref=f3e87]: Covers both people and sessions
+            - paragraph [ref=f3e88]: Flags a different person typing, and a remote-control tool moving the cursor in ways a human wouldn't.
+          - generic [ref=f3e89]:
+            - paragraph [ref=f3e93]: Gets stronger with use
+            - paragraph [ref=f3e94]: The more a genuine customer uses the app, the sharper the behavioural profile becomes.
+      - generic [ref=f3e95]:
+        - generic [ref=f3e96]: How it works
+        - heading "A profile built from ordinary use" [level=2] [ref=f3e97]
+        - generic [ref=f3e98]:
+          - paragraph [ref=f3e101]:
+            - strong [ref=f3e102]: "01."
+            - text: The app observes typing rhythm, swipe pressure, and how the phone is held during normal use.
+          - paragraph [ref=f3e105]:
+            - strong [ref=f3e106]: "02."
+            - text: Over time, this builds a behavioural profile unique to that customer.
+          - paragraph [ref=f3e109]:
+            - strong [ref=f3e110]: "03."
+            - text: Every new session is compared against that profile in real time, and any mismatch is passed to ekRules as a signal.
+      - generic [ref=f3e111]:
+        - generic [ref=f3e112]: Why now
+        - heading "Continuous, not one-time" [level=2] [ref=f3e113]
+        - paragraph [ref=f3e117]: Behavioural biometrics are increasingly cited by regulators, including SAMA and RBI, as an expected layer of continuous authentication, beyond a one-time login check.
+    - generic [ref=f3e119]:
+      - heading "Ready to verify more than just a password?" [level=3] [ref=f3e120]
+      - link "Book a demo" [ref=f3e122] [cursor=pointer]:
+        - /url: /contact
+  - contentinfo [ref=f3e123]:
+    - generic [ref=f3e124]:
+      - generic [ref=f3e125]:
+        - generic [ref=f3e126]:
+          - heading "Products" [level=4] [ref=f3e127]
+          - link "ekShield" [ref=f3e128] [cursor=pointer]:
+            - /url: /ekshield
+          - link "ekProtect" [ref=f3e129] [cursor=pointer]:
+            - /url: /ekprotect
+          - link "ekBind" [ref=f3e130] [cursor=pointer]:
+            - /url: /ekbind
+          - link "ekSign" [ref=f3e131] [cursor=pointer]:
+            - /url: /eksign
+          - link "ekSell" [ref=f3e132] [cursor=pointer]:
+            - /url: /eksell
+          - link "ekKey" [ref=f3e133] [cursor=pointer]:
+            - /url: /ekkey
+          - link "ekPulse" [ref=f3e134] [cursor=pointer]:
+            - /url: /ekpulse
+          - link "ekRules" [ref=f3e135] [cursor=pointer]:
+            - /url: /ekrules
+        - generic [ref=f3e136]:
+          - heading "Company" [level=4] [ref=f3e137]
+          - link "About us" [ref=f3e138] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=f3e139] [cursor=pointer]:
+            - /url: /blog
+          - link "Careers" [ref=f3e140] [cursor=pointer]:
+            - /url: /join-us
+          - link "Investors" [ref=f3e141] [cursor=pointer]:
+            - /url: /investors
+          - link "Contact" [ref=f3e142] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=f3e143]:
+          - heading "Contact" [level=4] [ref=f3e144]
+          - link "Talk to us" [ref=f3e145] [cursor=pointer]:
+            - /url: /contact
+          - link "LinkedIn" [ref=f3e146] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/ektar-technologies/
+          - link "YouTube" [ref=f3e147] [cursor=pointer]:
+            - /url: https://www.youtube.com/@ektar-technologies
+      - generic [ref=f3e148]:
+        - generic [ref=f3e149]: © Ektar 2022–2026. All rights reserved.
+        - generic [ref=f3e150]:
+          - link "Terms of Use" [ref=f3e151] [cursor=pointer]:
+            - /url: /termsofuse
+          - text: ·
+          - link "Privacy Policy" [ref=f3e152] [cursor=pointer]:
+            - /url: /privacy-policy
+      - generic [ref=f3e153]:
+        - generic [ref=f3e154]:
+          - heading "Singapore" [level=5] [ref=f3e155]
+          - img "Ektar Singapore office" [ref=f3e156]
+          - paragraph [ref=f3e157]: "18 Boon Lay Way #05-95 Tradehub 21, Singapore 609966"
+        - generic [ref=f3e158]:
+          - heading "UAE" [level=5] [ref=f3e159]
+          - img "Ektar UAE office" [ref=f3e160]
+          - paragraph [ref=f3e161]: Ektar Technologies LLC, 606, Latifa Towers, Near World Trade Center, Dubai, UAE
+        - generic [ref=f3e162]:
+          - heading "India" [level=5] [ref=f3e163]
+          - img "Ektar India office" [ref=f3e164]
+          - paragraph [ref=f3e165]: "Rattha Tek Meadows, Ground Floor, Tower A, No: 51, Rajiv Gandhi Salai, Sholinganallur, Chennai, Tamil Nadu 600119, India"
