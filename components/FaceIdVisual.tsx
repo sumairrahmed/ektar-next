@@ -1,4 +1,8 @@
-// ekKey hero visual — a two-scene cross-fade: scanning, then signed in.
+// ekKey hero visual — a two-scene cross-fade: a bordered biometric scan box
+// (face outline + corner brackets + sweeping beam, same visual language as
+// ekShield's fingerprint scene) sweeping through "Verifying it's you…",
+// then a signed-in confirmation carrying the passkey's own crypto signature
+// — mirrors the FIDO2/ECDSA specifics from the "How it works" copy.
 export default function FaceIdVisual() {
   return (
     <div className="shield-stack">
@@ -11,16 +15,29 @@ export default function FaceIdVisual() {
           <span className="bars">
             <i />
             <i />
-            <i />
           </span>
         </div>
         <div className="dev-body cycle2">
           <div className="scene">
-            <div className="faceid">
-              <span className="fring" />
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4 7V5a2 2 0 0 1 2-2h2M4 17v2a2 2 0 0 0 2 2h2M20 7V5a2 2 0 0 0-2-2h-2M20 17v2a2 2 0 0 1-2 2h-2M9 10v1M15 10v1M9 16c.7.7 1.8 1 3 1s2.3-.3 3-1" />
+            <p className="dev-label" style={{ textAlign: "center" }}>
+              Face ID
+            </p>
+            <div className="fp">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                style={{ color: "color-mix(in srgb, var(--paper) 62%, transparent)", padding: 22, boxSizing: "border-box" }}
+              >
+                <path d="M4 7V5a2 2 0 0 1 2-2h2M4 17v2a2 2 0 0 0 2 2h2M20 7V5a2 2 0 0 0-2-2h-2M20 17v2a2 2 0 0 1-2 2h-2" />
+                <circle cx="12" cy="12" r="6" />
+                <path d="M9.3 10.3v1.4M14.7 10.3v1.4" />
+                <path d="M9.2 15.2c.9.85 1.9 1.3 2.8 1.3s1.9-.45 2.8-1.3" />
               </svg>
+              <span className="fpscan" />
             </div>
             <p className="fid-label">Verifying it&apos;s you…</p>
           </div>
@@ -34,6 +51,9 @@ export default function FaceIdVisual() {
                 <span>No password used</span>
               </div>
             </div>
+            <p className="hash">
+              FIDO2 · ECDSA P-256 · key <b>9f21·8ac4</b>
+            </p>
           </div>
         </div>
       </div>
