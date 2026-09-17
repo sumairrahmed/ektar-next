@@ -24,7 +24,7 @@ export default function SigningCompletionAnimation() {
   const settled = step === 3;
 
   return (
-    <div className="viz">
+    <div key={settled ? "settled" : "pending"} className={settled ? "viz viz-sealglow" : "viz"}>
       <div className="vhead">
         <span>ekSign · execution status</span>
         <span key={settled ? "final" : "pending"} className="signfade">
