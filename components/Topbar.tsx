@@ -96,6 +96,16 @@ export default function Topbar() {
     setMobileOpen(false);
   }, [pathname]);
 
+  // The desktop dropdowns open via :hover/:focus-within on .pitem. Since Topbar
+  // lives in the root layout and its nav links persist across client-side
+  // navigations, a clicked link stays focused after the route changes — which
+  // keeps :focus-within (and the dropdown) stuck open. Clear focus once the
+  // route settles so the panel closes like it does on mouseleave.
+  useEffect(() => {
+    const active = document.activeElement as HTMLElement | null;
+    if (active && navRef.current?.contains(active)) active.blur();
+  }, [pathname]);
+
   useEffect(() => {
     if (!mobileOpen) return;
     function onKey(e: KeyboardEvent) {
@@ -214,13 +224,14 @@ export default function Topbar() {
                 data-role={item.role}
                 data-line={item.line}
                 aria-current={pathname === item.href ? "page" : undefined}
+                onClick={(e) => e.currentTarget.blur()}
               >
                 {item.label}
               </Link>
               {item.dropdown && (
                 <div className="pdrop">
                   {item.dropdown.map((d, i) => (
-                    <Link key={`${d.href}-${i}`} href={d.href}>
+                    <Link key={`${d.href}-${i}`} href={d.href} onClick={(e) => e.currentTarget.blur()}>
                       {d.label}
                       <span>{d.role}</span>
                     </Link>
