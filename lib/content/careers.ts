@@ -1,4 +1,4 @@
-// Transcribed from careers.dc.html → /join-us
+// Transcribed from careers.dc.html → /career
 // v3 rewrite — deliberate culture-page pivot, no form. "Get in touch" is
 // the CTA label throughout this page (not "Book a demo") — preserve that.
 export const hero = {

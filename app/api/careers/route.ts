@@ -15,6 +15,10 @@ export async function POST(req: Request) {
   const form = await req.formData();
   const name = (form.get("name") as string | null)?.trim();
   const email = (form.get("email") as string | null)?.trim();
+  const phone = (form.get("phone") as string | null)?.trim();
+  const role = (form.get("role") as string | null)?.trim();
+  const linkedin = (form.get("linkedin") as string | null)?.trim();
+  const message = (form.get("message") as string | null)?.trim();
   const resume = form.get("resume") as File | null;
 
   if (!name || !email) {
@@ -36,12 +40,17 @@ export async function POST(req: Request) {
       from: FROM_EMAIL,
       to: TO_EMAIL,
       replyTo: email,
-      subject: `New job application from ${name}`,
+      subject: `New job application from ${name}${role ? ` — ${role}` : ""}`,
       html: `
         <h2>New job application</h2>
         <p><strong>Name:</strong> ${escapeHtml(name)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+        <p><strong>Phone:</strong> ${escapeHtml(phone || "—")}</p>
+        <p><strong>Role interested in:</strong> ${escapeHtml(role || "—")}</p>
+        <p><strong>LinkedIn / portfolio:</strong> ${escapeHtml(linkedin || "—")}</p>
         <p><strong>Resume attached:</strong> ${resume && resume.size > 0 ? escapeHtml(resume.name) : "No file attached"}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message ? escapeHtml(message).replace(/\n/g, "<br />") : "—"}</p>
       `,
       attachments,
     });

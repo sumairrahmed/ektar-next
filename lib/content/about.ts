@@ -67,7 +67,7 @@ export const advisors = [
 ];
 
 export const beyondBanking = [
-  { heading: "Interested in joining us?", label: "→ Careers", href: "/join-us" },
+  { heading: "Interested in joining us?", label: "→ Careers", href: "/career" },
   { heading: "Interested in investing in Ektar?", label: "→ Get in touch", href: "/investors" },
 ];
 

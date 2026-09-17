@@ -15,7 +15,7 @@ const PRODUCTS = [
 const COMPANY = [
   { label: "About us", href: "/about" },
   { label: "Blog", href: "/blog" },
-  { label: "Careers", href: "/join-us" },
+  { label: "Careers", href: "/career" },
   { label: "Investors", href: "/investors" },
   { label: "Contact", href: "/contact" },
 ];

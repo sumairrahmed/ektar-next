@@ -24,7 +24,7 @@ export default function CareersPage() {
               <h1 className="display">{hero.title}</h1>
               <p className="sub">{hero.sub}</p>
               <div className="row">
-                <Link href="/contact" className="btn btn-primary">
+                <Link href="/career/apply" className="btn btn-primary">
                   Get in touch
                 </Link>
               </div>
@@ -60,7 +60,7 @@ export default function CareersPage() {
           <h3>{closing.heading}</h3>
           <p className="sub">{closing.sub}</p>
           <div className="row">
-            <Link href="/contact" className="btn btn-primary">
+            <Link href="/career/apply" className="btn btn-primary">
               Get in touch
             </Link>
           </div>

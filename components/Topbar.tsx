@@ -76,7 +76,9 @@ const STATUS_BY_PATH: Record<string, string> = {
   "/about": "Since 2022",
   "/investors": "Since 2022",
   "/blog": "Notes",
-  "/join-us": "Since 2022",
+  "/career": "Since 2022",
+  "/career/apply": "Application open",
+  "/investors/contact": "Channel open",
   "/contact": "Channel open",
 };
 

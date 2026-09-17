@@ -24,7 +24,7 @@ export default function InvestorsPage() {
               <h1 className="display">{hero.title}</h1>
               <p className="sub">{hero.sub}</p>
               <div className="row">
-                <Link href="/contact" className="btn btn-primary">
+                <Link href="/investors/contact" className="btn btn-primary">
                   Get in touch
                 </Link>
               </div>
@@ -52,7 +52,7 @@ export default function InvestorsPage() {
           <h3>{closing.heading}</h3>
           <p className="sub">{closing.sub}</p>
           <div className="row">
-            <Link href="/contact" className="btn btn-primary">
+            <Link href="/investors/contact" className="btn btn-primary">
               Get in touch
             </Link>
           </div>
