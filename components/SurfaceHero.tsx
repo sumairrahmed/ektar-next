@@ -6,7 +6,6 @@ export default function SurfaceHero({
   statusText,
   title,
   description,
-  tierLine,
   scanline = true,
   visual,
   titleClassName,
@@ -14,7 +13,6 @@ export default function SurfaceHero({
   statusText: string;
   title: ReactNode;
   description: string;
-  tierLine?: string;
   scanline?: boolean;
   visual: ReactNode;
   titleClassName?: string;
@@ -39,11 +37,6 @@ export default function SurfaceHero({
                 Book a demo
               </Link>
             </div>
-            {tierLine && (
-              <p className="status mono" style={{ margin: "calc(1.4 * var(--leading)) 0 0", letterSpacing: ".1em" }}>
-                {tierLine}
-              </p>
-            )}
           </div>
           <div className="reveal">{visual}</div>
         </div>

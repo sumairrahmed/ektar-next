@@ -81,7 +81,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="vnote">
-                Standard Chartered leadership backgrounds — <b>we have run the channels we now secure</b>
+                ~100 years in global banking — <b>we&apos;ve run the channels we now secure</b>
               </div>
             </div>
           </div>

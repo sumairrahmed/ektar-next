@@ -7,7 +7,6 @@ export const hero = {
   titleEmphasis: "in real time",
   description:
     "ekRules takes every signal from the user, device, and app — a login, a SIM check, a tamper flag — and makes one call in milliseconds: allow, verify further, or block.",
-  badge: "Building now",
 };
 
 export const capabilities = {

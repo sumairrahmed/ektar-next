@@ -1,56 +1,36 @@
-// ekBind hero visual — a SIM card and a mobile-network tower, connected by
-// two traveling signals (Silent Network Authentication out, Reverse SMS
-// back), with the tower pulsing radar-style rings. Native SVG <animate>/
-// <animateMotion>, no JS state — same pattern as RulesViz.
+// ekBind hero visual (DESIGN.md §4.4, transcribed from ekbind.dc.html's inline
+// .simtower SVG): a phone/SIM icon on the left and a cell tower on the right,
+// joined by three curved signal lines, with broadcast-wave arcs radiating
+// from the tower and a "SIM verified" label fading in above. Plain CSS
+// keyframe animations (simpulse/towerwave/verifyfade) — reduced motion is
+// handled by app/globals.css freezing them at their settled, visible state.
 export default function SimTowerViz() {
   return (
     <div className="simtower">
-      <div className="st-col">
-        <svg className="st-icon" width="54" height="60" viewBox="0 0 54 60" fill="none">
-          <path d="M4 2h34l14 14v42H4z" stroke="var(--paper)" strokeWidth={2} strokeLinejoin="round" />
-          <path d="M38 2v14h14" stroke="var(--paper)" strokeWidth={2} strokeLinejoin="round" />
-          <rect x="12" y="24" width="30" height="22" stroke="var(--accent-lt)" strokeWidth={1.6} />
-          <path d="M22 24v22M32 24v22M12 35h30" stroke="var(--accent-lt)" strokeWidth={1.2} />
-        </svg>
-        <span>Device</span>
-        <b>Banking app</b>
-      </div>
+      <svg width="100%" height="125" viewBox="0 0 320 145">
+        <rect x="20" y="55" width="46" height="60" rx="6" fill="none" stroke="var(--paper)" strokeWidth={2} />
+        <path d="M50 55 L66 71 L66 55 Z" fill="var(--ink)" stroke="var(--paper)" strokeWidth={2} />
+        <rect x="30" y="70" width="18" height="14" rx="2" fill="var(--accent-lt)" opacity={0.85} />
 
-      <svg className="st-link" viewBox="0 0 120 36" preserveAspectRatio="none">
-        <path id="stpath" d="M2,18 C40,2 80,34 118,18" fill="none" stroke="var(--line)" strokeWidth={1.5} strokeDasharray="4 6" />
-        <circle r={3.2} fill="var(--color-accent)">
-          <animateMotion dur="2.4s" repeatCount="indefinite">
-            <mpath href="#stpath" />
-          </animateMotion>
-        </circle>
-        <circle r={3.2} fill="var(--accent-lt)">
-          <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.2s" keyPoints="1;0" keyTimes="0;1" calcMode="linear">
-            <mpath href="#stpath" />
-          </animateMotion>
-        </circle>
+        <path d="M240 120 L255 55 L270 120 Z" fill="none" stroke="var(--paper)" strokeWidth={2} />
+        <line x1="255" y1="55" x2="255" y2="40" stroke="var(--paper)" strokeWidth={2} />
+        <circle cx="255" cy="37" r="3" fill="var(--paper)" />
+        <path className="tw" d="M240 42 A22 22 0 0 1 270 42" fill="none" stroke="var(--color-accent)" strokeWidth={2} />
+        <path className="tw tw2" d="M232 50 A34 34 0 0 1 278 50" fill="none" stroke="var(--color-accent)" strokeWidth={2} />
+        <path className="tw tw3" d="M224 58 A46 46 0 0 1 286 58" fill="none" stroke="var(--color-accent)" strokeWidth={2} />
+
+        <path className="sig" d="M70 80 Q150 40 235 80" fill="none" stroke="var(--color-accent)" strokeWidth={2} />
+        <path className="sig sig2" d="M70 85 Q150 50 235 85" fill="none" stroke="var(--color-accent)" strokeWidth={2} />
+        <path className="sig sig3" d="M70 90 Q150 60 235 90" fill="none" stroke="var(--color-accent)" strokeWidth={2} />
+
+        <text x="43" y="132" textAnchor="middle" fontSize="11" fill="var(--dim)">Device</text>
+        <text x="255" y="132" textAnchor="middle" fontSize="11" fill="var(--dim)">Operator</text>
+
+        <g className="verify">
+          <rect x="110" y="8" width="100" height="26" rx="4" fill="var(--ink)" stroke="var(--accent-lt)" strokeWidth={1.5} />
+          <text x="160" y="25" textAnchor="middle" fontSize="12" fill="var(--accent-lt)">SIM verified</text>
+        </g>
       </svg>
-
-      <div className="st-col">
-        <svg className="st-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" style={{ overflow: "visible" }}>
-          <circle cx="34" cy="16" r="6" opacity="0.65" stroke="var(--color-accent)" strokeWidth={1.4}>
-            <animate attributeName="r" values="4;22" dur="3s" begin="0s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0.65;0" dur="3s" begin="0s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="34" cy="16" r="6" opacity="0.65" stroke="var(--color-accent)" strokeWidth={1.4}>
-            <animate attributeName="r" values="4;22" dur="3s" begin="1s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0.65;0" dur="3s" begin="1s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="34" cy="16" r="6" opacity="0.65" stroke="var(--color-accent)" strokeWidth={1.4}>
-            <animate attributeName="r" values="4;22" dur="3s" begin="2s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0.65;0" dur="3s" begin="2s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="34" cy="16" r="1.8" fill="var(--accent-lt)" />
-          <path d="M34 16V56M18 56 34 16l16 40" stroke="var(--paper)" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M22 46h24M25.5 34h17" stroke="var(--paper)" strokeWidth={2} />
-        </svg>
-        <span>Operator</span>
-        <b>Network check</b>
-      </div>
     </div>
   );
 }

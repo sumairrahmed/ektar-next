@@ -8,7 +8,6 @@ export const hero = {
   titleEmphasis: "as unique as a fingerprint",
   description:
     "ekPulse learns how a genuine customer holds their phone, types, and swipes — then flags the moment those patterns don't match, even if every password and code was entered correctly.",
-  badge: "Building now",
 };
 
 export const capabilities = {

@@ -80,6 +80,18 @@ a:hover{color:var(--paper)}
 .hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,4vw,60px);align-items:center}
 @media(max-width:1000px){.hero{grid-template-columns:1fr}}
 .viz{position:relative;border:2px solid var(--line);background:color-mix(in srgb,var(--paper) 4%,transparent)}
+.simtower{margin-bottom:10px;padding:14px 16px 10px;border-bottom:1px solid var(--line)}
+.simtower .sig{stroke-dasharray:6 4;animation:simpulse 2.4s linear infinite}
+.simtower .sig2{animation-delay:.8s}
+.simtower .sig3{animation-delay:1.6s}
+.simtower .tw{animation:towerwave 1.8s ease-in-out infinite}
+.simtower .tw2{animation-delay:.3s}
+.simtower .tw3{animation-delay:.6s}
+.simtower .verify{animation:verifyfade 2.4s ease-in-out infinite}
+@keyframes simpulse{0%{stroke-dashoffset:60;opacity:0}15%{opacity:1}50%{stroke-dashoffset:0;opacity:0}100%{opacity:0}}
+@keyframes towerwave{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes verifyfade{0%,60%{opacity:0}70%,95%{opacity:1}100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.simtower .sig,.simtower .tw,.simtower .verify{animation:none;opacity:1}}
 .viz .vhead{display:flex;justify-content:space-between;gap:10px;padding:10px 14px;border-bottom:2px solid var(--line);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-lt)}
 .viz .vbody{padding:14px 16px}
 .vrow{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line-soft);font-size:13px;color:var(--dim)}
@@ -220,16 +232,40 @@ html[data-theme="light"] .themebtn .moon,body[data-theme="light"] .themebtn .moo
       <p class="status mono"><span class="dot"></span>SIM binding · ekBind</p>
       <h1 class="display">Bind the account to the SIM. Catch the swap.</h1>
       <p class="sub">ekBind verifies the SIM behind every session. Silent Network Authentication confirms the SIM directly with the mobile operator over the data connection — no code, no customer action. Reverse SMS proves possession of the SIM from the device itself. Both bind the account to a known SIM, so a swapped SIM or a moved number is caught before a transaction proceeds.</p>
-      <p class="status mono" style="margin:calc(1.4*var(--leading)) 0 0;letter-spacing:.1em"><span class="dot"></span>Shipping 2026</p>
       <div class="row">
         <button type="button" class="btn btn-primary" onclick="location.href='contact.dc.html'">Book a demo</button>
         <button type="button" class="btn btn-ghost btn-onink" onclick="location.href='index.dc.html'">← All products</button>
       </div>
       </div>
       <div class="viz">
+        <div class="simtower">
+          <svg width="100%" height="125" viewBox="0 0 320 145">
+            <rect x="20" y="55" width="46" height="60" rx="6" fill="none" stroke="var(--paper)" stroke-width="2"></rect>
+            <path d="M50 55 L66 71 L66 55 Z" fill="var(--ink)" stroke="var(--paper)" stroke-width="2"></path>
+            <rect x="30" y="70" width="18" height="14" rx="2" fill="var(--accent-lt)" opacity="0.85"></rect>
+
+            <path d="M240 120 L255 55 L270 120 Z" fill="none" stroke="var(--paper)" stroke-width="2"></path>
+            <line x1="255" y1="55" x2="255" y2="40" stroke="var(--paper)" stroke-width="2"></line>
+            <circle cx="255" cy="37" r="3" fill="var(--paper)"></circle>
+            <path class="tw" d="M240 42 A22 22 0 0 1 270 42" fill="none" stroke="var(--color-accent)" stroke-width="2"></path>
+            <path class="tw tw2" d="M232 50 A34 34 0 0 1 278 50" fill="none" stroke="var(--color-accent)" stroke-width="2"></path>
+            <path class="tw tw3" d="M224 58 A46 46 0 0 1 286 58" fill="none" stroke="var(--color-accent)" stroke-width="2"></path>
+
+            <path class="sig" d="M70 80 Q150 40 235 80" fill="none" stroke="var(--color-accent)" stroke-width="2"></path>
+            <path class="sig sig2" d="M70 85 Q150 50 235 85" fill="none" stroke="var(--color-accent)" stroke-width="2"></path>
+            <path class="sig sig3" d="M70 90 Q150 60 235 90" fill="none" stroke="var(--color-accent)" stroke-width="2"></path>
+
+            <text x="43" y="132" text-anchor="middle" font-size="11" fill="var(--dim)">Device</text>
+            <text x="255" y="132" text-anchor="middle" font-size="11" fill="var(--dim)">Operator</text>
+
+            <g class="verify">
+              <rect x="110" y="8" width="100" height="26" rx="4" fill="var(--ink)" stroke="var(--accent-lt)" stroke-width="1.5"></rect>
+              <text x="160" y="25" text-anchor="middle" font-size="12" fill="var(--accent-lt)">SIM verified</text>
+            </g>
+          </svg>
+        </div>
         <div class="vhead"><span>ekBind · SIM verification</span><span>Verified</span></div>
         <div class="vbody">
-        <div class="nodes"><div class="node"><span>Device</span>Banking app</div><div class="dashlink"></div><div class="node"><span>Operator</span>Network check</div></div>
         <div class="vrow"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 2h8l4 4v16H6z"></path><rect x="9" y="12" width="6" height="6"></rect></svg></span><span><b>Silent Network Authentication</b></span><span class="ok">Verified</span></div>
         <div class="vrow"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20"></rect><path d="M9 18h6"></path></svg></span><span><b>Reverse SMS</b></span><span class="ok">Sent from device</span></div>
         <div class="vrow"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5 3.5 8.5 9 10 5.5-1.5 9-5 9-10V6z"></path></svg></span><span><b>SIM swap / port-out</b></span><span class="ok">None detected</span></div>

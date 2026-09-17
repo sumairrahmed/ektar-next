@@ -46,42 +46,25 @@ export const heroScenes = [
   },
 ];
 
-// The trust suite — three tiered panels
+// The trust suite — a single flat, numbered list (no tier grouping as of v4;
+// the old "Live today / Shipping through 2026 / Building now" breakdown is gone)
 export const trustSuite = {
   heading: "One suite. Seven products, one engine.",
   intro:
     "Each product is licensed on its own — deploy one or all seven, and the portals, APIs and SDKs behave the same either way. The whole suite runs inside your own infrastructure, with no runtime dependency on Ektar.",
-  tiers: [
-    {
-      tier: "Live today",
-      count: "Two products",
-      products: [
-        { num: "01", name: "ekShield", role: "Authentication", description: "Replaces one-time codes with a login that can't be phished.", href: "/ekshield" },
-        { num: "02", name: "ekProtect", role: "Device & app integrity", description: "Spots malware, fake screens, and compromised phones in real time.", href: "/ekprotect" },
-      ],
-    },
-    {
-      tier: "Shipping through 2026",
-      count: "Three products",
-      products: [
-        { num: "03", name: "ekBind", role: "SIM & network trust", description: "Catches a SIM swap before a transaction goes through.", href: "/ekbind" },
-        { num: "04", name: "ekSign", role: "Document signing", description: "Signed documents that can't be altered after the fact, right inside your app.", href: "/eksign" },
-        { num: "05", name: "ekKey", role: "Passkeys", description: "Login without a password at all, tied to the customer's own device.", href: "/ekkey" },
-      ],
-    },
-    {
-      tier: "Building now",
-      count: "Two products",
-      products: [
-        { num: "06", name: "ekPulse", role: "Behavioural biometrics", description: "Learns how a real customer types and moves, and flags when it isn't them.", href: "/ekpulse" },
-        { num: "07", name: "ekRules", role: "Risk decisioning", description: "Takes every signal above and makes one real-time call: allow, verify further, or block.", href: "/ekrules" },
-      ],
-    },
+  products: [
+    { num: "01", name: "ekShield", role: "Authentication", description: "Replaces one-time codes with a login that can't be phished.", href: "/ekshield" },
+    { num: "02", name: "ekProtect", role: "Device & app integrity", description: "Spots malware, fake screens, and compromised phones in real time.", href: "/ekprotect" },
+    { num: "03", name: "ekBind", role: "SIM & network trust", description: "Catches a SIM swap before a transaction goes through.", href: "/ekbind" },
+    { num: "04", name: "ekSign", role: "Document signing", description: "Signed documents that can't be altered after the fact, right inside your app.", href: "/eksign" },
+    { num: "05", name: "ekKey", role: "Passkeys", description: "Login without a password at all, tied to the customer's own device.", href: "/ekkey" },
+    { num: "06", name: "ekPulse", role: "Behavioural biometrics", description: "Learns how a real customer types and moves, and flags when it isn't them.", href: "/ekpulse" },
+    { num: "07", name: "ekRules", role: "Risk decisioning", description: "Takes every signal above and makes one real-time call: allow, verify further, or block.", href: "/ekrules" },
   ],
 };
 
 export const proofStrip = [
-  { k: "Live", v: "At a top-3 UAE bank" },
+  { k: "Live", v: "At 2 top-tier UAE banks" },
   { k: "Contracted", v: "With a top-3 Oman bank" },
   { k: "Secured", v: "Over 10 million authentications" },
   { k: "Aligned with", v: "CBUAE · RBI · SAMA · FIDO" },
@@ -100,7 +83,7 @@ export const surfaceGrid = {
       label: "user",
       products: "ekShield · ekKey · ekPulse · ekSign",
       copy: "A login that can't be phished, copied, or intercepted — closing the door on stolen one-time codes and call-centre scams.",
-      threats: ["Stolen text-message codes", "Phishing and fake login pages", "Call-centre social engineering", "Deepfakes and synthetic identities"],
+      threats: ["Stolen SMS OTP", "Phishing and fake login pages", "Call-centre social engineering", "Deepfakes and synthetic identities"],
       href: "/protect-the-user",
     },
     {
@@ -127,7 +110,11 @@ export const decisionEngineCallout =
 
 export const regulatorySection = {
   heading: "Regulators are ordering the upgrade",
-  intro: "Across the Gulf, South Asia, and Southeast Asia, one-time codes sent by text are being banned outright — with hard deadlines.",
+  // Intro switched to "SMS OTP" in v4 — the four rows below still say "text
+  // codes"/"Text-message codes" in the source and were NOT normalized
+  // (PAGES.md §1.5). Don't "fix" the rows to match; it's an intentional,
+  // non-uniform terminology split in the client's export.
+  intro: "Across the Gulf, South Asia, and Southeast Asia, SMS OTP is being banned outright — with hard deadlines.",
   rows: [
     { market: "UAE", requirement: "Text and email codes banned. Banks must move to in-app verification and passkeys by March 2026." },
     { market: "Saudi Arabia", requirement: "Device-bound login required. Fines of up to SAR 5 million per breach." },
@@ -140,7 +127,7 @@ export const statBand = {
   heading: "Fraud has outgrown yesterday's defences",
   stats: [
     { tag: "Data / 01", n: "$485B", label: "Lost to banking fraud", detail: "$485 billion lost to banking fraud in a single year." },
-    { tag: "Data / 02", n: "93%", label: "Still on text-message codes", detail: "93% of banks still rely on text-message codes — the method regulators are banning." },
+    { tag: "Data / 02", n: "93%", label: "Still on SMS OTP", detail: "93% of banks still rely on SMS OTP — the method regulators are banning." },
     { tag: "Data / 03", n: "+12x", label: "AI-generated fraud", detail: "AI-generated fraud is up more than 12x in the last year alone." },
   ],
 };

@@ -1,0 +1,12 @@
+- generic [active]:
+  - generic [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - generic [ref=f4e4]: "500"
+      - generic [ref=f4e5]: Dev Server Error
+    - generic [ref=f4e6]:
+      - generic [ref=f4e7]: Failed to write app endpoint /ekbind/pageCaused by:- [project]/app/globals.css [app-client] (css)- reading file C:\Users\NotTheOwner\ShipStudio\ektar\CLAUDE.md- The process cannot access the file because it is being used by another process. (os error 32)Debug info:- Execution of get_written_endpoint_with_issues_operation failed- Execution of endpoint_write_to_disk failed- Execution of <AppEndpoint as Endpoint>::output failed- Failed to write app endpoint /ekbind/page- Execution of AppEndpoint::output failed- Execution of AppProject::app_module_graphs failed- Execution of *<AppEndpoint as Endpoint>::additional_entries failed- Execution of *ModuleGraph::from_graphs failed- Execution of SingleModuleGraph::new_with_entries_visited_intern failed- [project]/app/globals.css [app-client] (css)- Execution of primary_chunkable_referenced_modules failed- Execution of <CssModuleAsset as Module>::references failed- Execution of parse_css failed- Execution of <PostCssTransformedAsset as Asset>::content failed- Execution of PostCssTransformedAsset::process failed- Execution of evaluate_webpack_loader failed- Execution of <DiskFileSystem as FileSystem>::read failed- reading file C:\Users\NotTheOwner\ShipStudio\ektar\CLAUDE.md- The process cannot access the file because it is being used by another process. (os error 32)
+      - generic [ref=f4e8]: Check the terminal for full error details
+    - generic [ref=f4e9]:
+      - button "Copy Error" [ref=f4e10] [cursor=pointer]
+      - button "Send to Claude" [ref=f4e14] [cursor=pointer]
+  - alert [ref=f4e15]

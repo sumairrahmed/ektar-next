@@ -145,15 +145,19 @@ a:hover{color:var(--paper)}
 @keyframes cycle2{0%,3%{opacity:0}7%,43%{opacity:1}47%,100%{opacity:0}}
 @keyframes cycle3{0%,3%{opacity:0}6%,27%{opacity:1}30%,100%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.cycle .scene{animation:none;opacity:0}.cycle .scene:first-child{opacity:1}}
-.cycle2{position:relative;min-height:452px;display:flex;align-items:center;justify-content:center}
-.cycle2 .scene{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;opacity:0;animation:cyc2 8s infinite}
-.cycle2 .scene:nth-child(2){animation-delay:4s}
-@keyframes cyc2{0%,4%{opacity:0}8%,42%{opacity:1}46%,100%{opacity:0}}
-.faceid{position:relative;width:64px;height:64px;display:flex;align-items:center;justify-content:center;color:var(--accent-lt)}
-.faceid .fring{position:absolute;inset:0;border:2px solid var(--color-accent);border-radius:50%;animation:pulsering 1.4s ease-out infinite}
-.fid-label{font-size:12.5px;color:var(--dim);margin:0}
-@keyframes pulsering{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.7);opacity:0}}
-@media(prefers-reduced-motion:reduce){.cycle2 .scene{animation:none;opacity:0}.cycle2 .scene:first-child{opacity:1}.faceid .fring{animation:none}}
+.keybound{position:relative;min-height:452px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.keybound .scene{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;opacity:0;animation:cyc3key 9s infinite}
+.keybound .scene:nth-child(2){animation-delay:3s}
+.keybound .scene:nth-child(3){animation-delay:6s}
+.kbicon{position:relative;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:var(--accent-lt)}
+.kb-active{animation:kbglow 1.6s ease-in-out infinite}
+.kb-x{position:absolute;top:-4px;right:-6px;background:var(--ink);border-radius:50%}
+.kb-shake{animation:kbshake 3s ease-in-out infinite}
+.kb-caption{font-size:12.5px;color:var(--dim);margin:0}
+@keyframes cyc3key{0%,4%{opacity:0}8%,28%{opacity:1}33%,100%{opacity:0}}
+@keyframes kbglow{0%,100%{opacity:.65;transform:scale(1)}50%{opacity:1;transform:scale(1.1)}}
+@keyframes kbshake{0%,20%,100%{transform:translateX(0)}5%{transform:translateX(-3px)}10%{transform:translateX(3px)}15%{transform:translateX(-3px)}}
+@media(prefers-reduced-motion:reduce){.keybound .scene{animation:none;opacity:0}.keybound .scene:first-child{opacity:1}.kb-active,.kb-shake{animation:none}}
 .stage .display{font-size:clamp(30px,3.6vw,48px)}
 .signal{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(16px,3vw,48px);align-items:center;border-top:2px solid var(--color-accent);padding:calc(1.3*var(--leading)) 0 0;margin-top:calc(1.3*var(--leading))}
 .signal .lbl{font-size:12px;color:var(--accent-lt);letter-spacing:.12em;text-transform:uppercase;margin:0}
@@ -309,7 +313,6 @@ html[data-theme="light"] .themebtn .moon,body[data-theme="light"] .themebtn .moo
         <div class="row">
           <button type="button" class="btn btn-primary" onclick="location.href='contact.dc.html'">Book a demo</button>
         </div>
-        <p class="status mono" style="margin:calc(1.4*var(--leading)) 0 0;letter-spacing:.1em">Shipping 2026</p>
       </div>
 
       <div class="shield-stack">
@@ -318,19 +321,28 @@ html[data-theme="light"] .themebtn .moon,body[data-theme="light"] .themebtn .moo
         <span class="ring r3"></span>
         <div class="device">
           <div class="dev-top mono"><span>09:41</span><span class="bars"><i></i><i></i><i></i></span></div>
-          <div class="dev-body cycle2">
+          <div class="dev-body keybound">
             <div class="scene">
-              <div class="faceid">
-                <span class="fring"></span>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V5a2 2 0 0 1 2-2h2M4 17v2a2 2 0 0 0 2 2h2M20 7V5a2 2 0 0 0-2-2h-2M20 17v2a2 2 0 0 1-2 2h-2M9 10v1M15 10v1M9 16c.7.7 1.8 1 3 1s2.3-.3 3-1"></path></svg>
+              <p class="dev-label">This device</p>
+              <div class="kbicon kb-active">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>
               </div>
-              <p class="fid-label">Verifying it's you…</p>
+              <p class="kb-caption">Passkey active · signs in instantly</p>
             </div>
             <div class="scene">
-              <div class="verified">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>
-                <div><b>Signed in</b><span>No password used</span></div>
+              <p class="dev-label">Copied to another device</p>
+              <div class="kbicon kb-shake">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--dim)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e0574c" stroke-width="3" stroke-linecap="round" class="kb-x"><path d="M18 6L6 18M6 6l12 12"></path></svg>
               </div>
+              <p class="kb-caption">Rejected · not the enrolled hardware</p>
+            </div>
+            <div class="scene">
+              <p class="dev-label">Device-bound by design</p>
+              <div class="kbicon">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--accent-lt)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v5c0 5-3.5 9-8 10-4.5-1-8-5-8-10V5l8-3z"></path><path d="M9 12l2 2 4-4"></path></svg>
+              </div>
+              <p class="kb-caption">A stolen passkey file is worthless</p>
             </div>
           </div>
         </div>

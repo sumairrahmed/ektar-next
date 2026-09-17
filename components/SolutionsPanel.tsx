@@ -2,13 +2,12 @@ import Link from "next/link";
 
 type Product = { num: string; name: string; role: string; description: string; href: string };
 
-export default function TieredSolutionsPanel({ tier, count, products }: { tier: string; count: string; products: Product[] }) {
+// Flat, numbered product list — same .solpanel/.sol pattern used on the
+// surface pages. As of v4 the homepage no longer groups these by tier
+// (DESIGN.md §6) — don't reintroduce tier headers here.
+export default function SolutionsPanel({ products }: { products: Product[] }) {
   return (
-    <div className="solpanel" style={{ marginBottom: 2 }}>
-      <div className="sp-head mono">
-        <span>{tier}</span>
-        <b>{count}</b>
-      </div>
+    <div className="solpanel">
       {products.map((p) => (
         <Link key={p.href} href={p.href} className="sol">
           <span className="num mono">{p.num}</span>

@@ -1,0 +1,245 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Ektar home" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Ektar" [ref=e4]
+    - generic [ref=e5]: SIM verified
+    - navigation [ref=e7]:
+      - link "Home" [ref=e9] [cursor=pointer]:
+        - /url: /
+      - link "Protect the User" [ref=e11] [cursor=pointer]:
+        - /url: /protect-the-user
+      - link "Protect the Device" [ref=e13] [cursor=pointer]:
+        - /url: /protect-the-device
+      - link "Protect the App" [ref=e15] [cursor=pointer]:
+        - /url: /protect-the-app
+      - link "About" [ref=e17] [cursor=pointer]:
+        - /url: /about
+    - button "Toggle theme" [ref=e18] [cursor=pointer]
+    - link "Book a demo" [ref=e21] [cursor=pointer]:
+      - /url: /contact
+  - generic [ref=e22]:
+    - generic [ref=e24]: Seven products
+    - generic [ref=e26]: One decision engine — ekRules weighs every signal the three surfaces emit.
+  - generic [ref=e27]:
+    - generic [ref=e28]:
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - generic: +971 •• ••• 4821
+            - generic: sim a41f
+          - generic:
+            - generic: +968 •• ••• 7130
+            - generic: sim 92bb
+          - generic:
+            - generic: +971 •• ••• 5507
+            - generic: sna verified · operator confirmed
+          - generic:
+            - generic: +91 ••• ••• 2249
+            - generic: sim 7de4
+          - generic:
+            - generic: +65 •••• 6688
+            - generic: sim 1a58
+          - generic:
+            - generic: +966 •• ••• 3092
+            - generic: swap detected
+          - generic:
+            - generic: +971 •• ••• 8874
+            - generic: sim 04af
+          - generic:
+            - generic: +973 •••• 2261
+            - generic: sim f0c3
+          - generic:
+            - generic: +91 ••• ••• 7715
+            - generic: sim 5b6e
+          - generic:
+            - generic: +65 •••• 3390
+            - generic: reverse sms · sent from device
+          - generic:
+            - generic: +971 •• ••• 6042
+            - generic: sim 31dd
+          - generic:
+            - generic: +968 •• ••• 1188
+            - generic: sim 7b21
+          - generic:
+            - generic: +966 •• ••• 9503
+            - generic: sim e5c9
+          - generic:
+            - generic: +971 •• ••• 2874
+            - generic: sim 88d0
+          - generic:
+            - generic: +971 •• ••• 4821
+            - generic: sim a41f
+          - generic:
+            - generic: +968 •• ••• 7130
+            - generic: sim 92bb
+          - generic:
+            - generic: +971 •• ••• 5507
+            - generic: sna verified · operator confirmed
+          - generic:
+            - generic: +91 ••• ••• 2249
+            - generic: sim 7de4
+          - generic:
+            - generic: +65 •••• 6688
+            - generic: sim 1a58
+          - generic:
+            - generic: +966 •• ••• 3092
+            - generic: swap detected
+          - generic:
+            - generic: +971 •• ••• 8874
+            - generic: sim 04af
+          - generic:
+            - generic: +973 •••• 2261
+            - generic: sim f0c3
+          - generic:
+            - generic: +91 ••• ••• 7715
+            - generic: sim 5b6e
+          - generic:
+            - generic: +65 •••• 3390
+            - generic: reverse sms · sent from device
+          - generic:
+            - generic: +971 •• ••• 6042
+            - generic: sim 31dd
+          - generic:
+            - generic: +968 •• ••• 1188
+            - generic: sim 7b21
+          - generic:
+            - generic: +966 •• ••• 9503
+            - generic: sim e5c9
+          - generic:
+            - generic: +971 •• ••• 2874
+            - generic: sim 88d0
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - paragraph [ref=e33]: SIM binding · ekBind
+          - heading "Bind the account to the SIM. Catch the swap." [level=1] [ref=e35]
+          - paragraph [ref=e36]: ekBind verifies the SIM behind every session. Silent Network Authentication confirms the SIM directly with the mobile operator over the data connection — no code, no customer action. Reverse SMS proves possession of the SIM from the device itself. Both bind the account to a known SIM, so a swapped SIM or a moved number is caught before a transaction proceeds.
+          - generic [ref=e37]:
+            - link "Book a demo" [ref=e38] [cursor=pointer]:
+              - /url: /contact
+            - link "← All products" [ref=e39] [cursor=pointer]:
+              - /url: /
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e43]: ekBind · SIM verification
+            - generic [ref=e44]: Verified
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - paragraph [ref=e47]: SIM verified
+              - generic [ref=e48]:
+                - generic [ref=e49]:
+                  - generic [ref=e55]: Device
+                  - generic [ref=e56]: Banking app
+                - generic [ref=e64]:
+                  - generic [ref=e72]: Operator
+                  - generic [ref=e73]: Network check
+            - generic [ref=e74]:
+              - generic [ref=e79]: Silent Network Authentication
+              - generic [ref=e80]: Verified
+            - generic [ref=e81]:
+              - generic [ref=e85]: Reverse SMS
+              - generic [ref=e86]: Sent from device
+            - generic [ref=e87]:
+              - generic [ref=e91]: SIM swap / port-out
+              - generic [ref=e92]: None detected
+            - generic [ref=e93]:
+              - generic [ref=e98]: Code sent to customer
+              - generic [ref=e99]: None
+          - generic [ref=e100]: The SIM is proven with the operator — nothing is sent to intercept
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - generic [ref=e104]: Methods
+          - generic [ref=e105]: SNA · Reverse SMS
+        - generic [ref=e106]:
+          - generic [ref=e107]: Catches
+          - generic [ref=e108]: SIM swap · port-out · device change
+        - generic [ref=e109]:
+          - generic [ref=e110]: Customer action
+          - generic [ref=e111]: None, with SNA
+      - generic [ref=e112]:
+        - generic [ref=e113]: How binding works
+        - heading "Two ways to prove the SIM. No OTP in either." [level=2] [ref=e114]
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - paragraph [ref=e117]: "01"
+            - paragraph [ref=e118]: Silent Network Authentication
+            - paragraph [ref=e119]: The SIM is confirmed with the mobile operator over the data connection. Nothing is sent to the customer, so there is nothing to intercept or socially engineer.
+          - generic [ref=e120]:
+            - paragraph [ref=e121]: "02"
+            - paragraph [ref=e122]: Reverse SMS
+            - paragraph [ref=e123]: The device sends the message rather than receiving a code — possession of the SIM is proven by the sender, not trusted from an inbound message.
+          - generic [ref=e124]:
+            - paragraph [ref=e125]: "03"
+            - paragraph [ref=e126]: SIM-swap and port-out detection
+            - paragraph [ref=e127]: A changed SIM breaks the binding. The session is re-verified before the transaction is allowed to continue.
+      - generic [ref=e128]:
+        - generic [ref=e129]: Why now
+        - heading "Regulators are mandating device and SIM-level proof" [level=2] [ref=e130]
+        - paragraph [ref=e131]: Saudi Arabia's SAMA framework mandates device-bound credentials, and Malaysia's BNM RMiT 2026 mandates device binding for every licensed bank — SIM-swap and port-out checks are a core part of meeting that bar.
+    - generic [ref=e133]:
+      - heading "Bind every session to a verified SIM." [level=3] [ref=e134]
+      - link "Book a demo" [ref=e136] [cursor=pointer]:
+        - /url: /contact
+  - contentinfo [ref=e137]:
+    - generic [ref=e138]:
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - heading "Products" [level=4] [ref=e141]
+          - link "ekShield" [ref=e142] [cursor=pointer]:
+            - /url: /ekshield
+          - link "ekProtect" [ref=e143] [cursor=pointer]:
+            - /url: /ekprotect
+          - link "ekBind" [ref=e144] [cursor=pointer]:
+            - /url: /ekbind
+          - link "ekSign" [ref=e145] [cursor=pointer]:
+            - /url: /eksign
+          - link "ekSell" [ref=e146] [cursor=pointer]:
+            - /url: /eksell
+          - link "ekKey" [ref=e147] [cursor=pointer]:
+            - /url: /ekkey
+          - link "ekPulse" [ref=e148] [cursor=pointer]:
+            - /url: /ekpulse
+          - link "ekRules" [ref=e149] [cursor=pointer]:
+            - /url: /ekrules
+        - generic [ref=e150]:
+          - heading "Company" [level=4] [ref=e151]
+          - link "About us" [ref=e152] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=e153] [cursor=pointer]:
+            - /url: /blog
+          - link "Careers" [ref=e154] [cursor=pointer]:
+            - /url: /career
+          - link "Investors" [ref=e155] [cursor=pointer]:
+            - /url: /investors
+          - link "Contact" [ref=e156] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e157]:
+          - heading "Contact" [level=4] [ref=e158]
+          - link "Talk to us" [ref=e159] [cursor=pointer]:
+            - /url: /contact
+          - link "LinkedIn" [ref=e160] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/ektar-technologies/
+          - link "YouTube" [ref=e161] [cursor=pointer]:
+            - /url: https://www.youtube.com/@ektar-technologies
+      - generic [ref=e162]:
+        - generic [ref=e163]: © Ektar 2022–2026. All rights reserved.
+        - generic [ref=e164]:
+          - link "Terms of Use" [ref=e165] [cursor=pointer]:
+            - /url: /termsofuse
+          - text: ·
+          - link "Privacy Policy" [ref=e166] [cursor=pointer]:
+            - /url: /privacy-policy
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - heading "Singapore" [level=5] [ref=e169]
+          - img "Ektar Singapore office" [ref=e170]
+          - paragraph [ref=e171]: "18 Boon Lay Way #05-95 Tradehub 21, Singapore 609966"
+        - generic [ref=e172]:
+          - heading "UAE" [level=5] [ref=e173]
+          - img "Ektar UAE office" [ref=e174]
+          - paragraph [ref=e175]: Ektar Technologies LLC, 606, Latifa Towers, Near World Trade Center, Dubai, UAE
+        - generic [ref=e176]:
+          - heading "India" [level=5] [ref=e177]
+          - img "Ektar India office" [ref=e178]
+          - paragraph [ref=e179]: "Rattha Tek Meadows, Ground Floor, Tower A, No: 51, Rajiv Gandhi Salai, Sholinganallur, Chennai, Tamil Nadu 600119, India"

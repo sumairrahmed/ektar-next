@@ -1,0 +1,5 @@
+[     247ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:61846/_next/static/chunks/node_modules_react-dom_4411d9bd._.js:15305
+[     283ms] Error: An unexpected Turbopack error occurred. Please see the output of `next dev` for more details.
+    at getServerError (http://localhost:61846/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:2050:62)
+    at http://localhost:61846/_next/static/chunks/node_modules_next_dist_client_5a8a528e._.js:3696:27
+[     584ms] [LOG] [HMR] connected @ http://localhost:61846/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1206

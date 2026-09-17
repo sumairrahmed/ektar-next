@@ -6,7 +6,6 @@ export const hero = {
   titleLine2: "— or a code — at all",
   description:
     "ekKey replaces passwords and one-time codes with a passkey tied to the customer's own device — the same industry standard already used by major banks and tech platforms worldwide.",
-  badge: "Shipping 2026",
 };
 
 export const capabilities = {

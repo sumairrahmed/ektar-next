@@ -1,0 +1,280 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - link "Ektar home" [ref=f3e3] [cursor=pointer]:
+      - /url: /
+      - img "Ektar" [ref=f3e4]
+    - navigation [ref=f3e5]:
+      - link "Home" [ref=f3e7] [cursor=pointer]:
+        - /url: /
+      - link "Protect the User" [ref=f3e9] [cursor=pointer]:
+        - /url: /protect-the-user
+      - link "Protect the Device" [ref=f3e11] [cursor=pointer]:
+        - /url: /protect-the-device
+      - link "Protect the App" [ref=f3e13] [cursor=pointer]:
+        - /url: /protect-the-app
+      - link "About" [ref=f3e15] [cursor=pointer]:
+        - /url: /about
+    - button "Toggle theme" [ref=f3e16] [cursor=pointer]
+    - link "Book a demo" [ref=f3e19] [cursor=pointer]:
+      - /url: /contact
+  - generic [ref=f3e20]:
+    - generic [ref=f3e22]: Seven products
+    - generic [ref=f3e24]: One decision engine — ekRules weighs every signal the three surfaces emit.
+  - generic [ref=f3e25]:
+    - generic [ref=f3e26]:
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - generic: sig 1 of 3 · borrower
+            - generic: a3f9·c2d1
+          - generic:
+            - generic: sig 2 of 3 · co-borrower
+            - generic: e4b8·f7c0
+          - generic:
+            - generic: sig 3 of 3 · guarantor
+            - generic: signed · sha-256 sealed
+          - generic:
+            - generic: mandate change · single
+            - generic: 918d·5b6e
+          - generic:
+            - generic: fatca declaration
+            - generic: a417·f0c3
+          - generic:
+            - generic: suitability form
+            - generic: 92bb·7de4
+          - generic:
+            - generic: policy acceptance
+            - generic: 1a58·04af
+          - generic:
+            - generic: joint account opening
+            - generic: 7b21·e5c9
+          - generic:
+            - generic: credit card agreement
+            - generic: 3f9a·c2e1
+          - generic:
+            - generic: loan agreement · sequential
+            - generic: 88d0·5b6e
+          - generic:
+            - generic: crs declaration
+            - generic: a208·31dd
+          - generic:
+            - generic: mandate change · joint
+            - generic: f17b·9c4e
+          - generic:
+            - generic: bancassurance terms
+            - generic: 04af·1a58
+          - generic:
+            - generic: suitability review
+            - generic: 7de4·92bb
+          - generic:
+            - generic: sig 1 of 3 · borrower
+            - generic: a3f9·c2d1
+          - generic:
+            - generic: sig 2 of 3 · co-borrower
+            - generic: e4b8·f7c0
+          - generic:
+            - generic: sig 3 of 3 · guarantor
+            - generic: signed · sha-256 sealed
+          - generic:
+            - generic: mandate change · single
+            - generic: 918d·5b6e
+          - generic:
+            - generic: fatca declaration
+            - generic: a417·f0c3
+          - generic:
+            - generic: suitability form
+            - generic: 92bb·7de4
+          - generic:
+            - generic: policy acceptance
+            - generic: 1a58·04af
+          - generic:
+            - generic: joint account opening
+            - generic: 7b21·e5c9
+          - generic:
+            - generic: credit card agreement
+            - generic: 3f9a·c2e1
+          - generic:
+            - generic: loan agreement · sequential
+            - generic: 88d0·5b6e
+          - generic:
+            - generic: crs declaration
+            - generic: a208·31dd
+          - generic:
+            - generic: mandate change · joint
+            - generic: f17b·9c4e
+          - generic:
+            - generic: bancassurance terms
+            - generic: 04af·1a58
+          - generic:
+            - generic: suitability review
+            - generic: 7de4·92bb
+      - generic [ref=f3e29]:
+        - generic [ref=f3e30]:
+          - paragraph [ref=f3e31]: Document signing & integrity · ekSign
+          - heading "Signing inside your own channel. Proof that outlives the session." [level=1] [ref=f3e33]
+          - paragraph [ref=f3e34]: ekSign brings document signing back inside the bank. Customers sign in your own app or branded page — with the MFA they already use, and a signature that's cryptographically bound to the document so tampering is detectable forever.
+          - generic [ref=f3e35]:
+            - link "Book a demo" [ref=f3e36] [cursor=pointer]:
+              - /url: /contact
+            - link "← All products" [ref=f3e37] [cursor=pointer]:
+              - /url: /
+        - generic [ref=f3e39]:
+          - generic [ref=f3e40]:
+            - generic [ref=f3e41]: ekSign · execution status
+            - generic [ref=f3e42]: 2 of 3 signed
+          - generic [ref=f3e43]:
+            - generic [ref=f3e44]:
+              - generic [ref=f3e49]: Primary borrower
+              - generic [ref=f3e50]: Signed
+            - generic [ref=f3e51]:
+              - generic [ref=f3e56]: Co-borrower
+              - generic [ref=f3e57]: Signed
+            - generic [ref=f3e58]:
+              - generic [ref=f3e63]: Guarantor
+              - generic [ref=f3e64]: Awaiting
+            - generic [ref=f3e65]:
+              - generic [ref=f3e70]: Authentication
+              - generic [ref=f3e71]: Bank MFA · national ID
+          - generic [ref=f3e72]: Seal 7d2x·91qz — any alteration after signing fails verification
+    - generic [ref=f3e73]:
+      - generic [ref=f3e74]:
+        - generic [ref=f3e75]: Why banks move signing in-house
+        - heading "A third-party portal breaks the journey and holds your record." [level=2] [ref=f3e76]
+        - paragraph [ref=f3e77]: Most banks sign through an external e-signature platform. That means a customer receives an email that is not from the bank, is redirected to another brand's portal, and verifies with that platform's own SMS OTP — an event with no link to their banking identity. The signed documents and the audit trail then live in the vendor's platform, where the bank is a tenant and pricing or availability changes affect access to its own records.
+        - generic [ref=f3e78]:
+          - generic [ref=f3e79]:
+            - paragraph [ref=f3e80]: Experience
+            - paragraph [ref=f3e81]: The journey leaves the bank
+            - paragraph [ref=f3e82]: Another brand's email, domain and portal sit in the middle of a regulated banking action.
+          - generic [ref=f3e83]:
+            - paragraph [ref=f3e84]: Identity
+            - paragraph [ref=f3e85]: Signing is not tied to the customer
+            - paragraph [ref=f3e86]: A vendor OTP proves access to an inbox or a phone number, not that your verified customer signed.
+          - generic [ref=f3e87]:
+            - paragraph [ref=f3e88]: Custody & cost
+            - paragraph [ref=f3e89]: The bank does not own the record
+            - paragraph [ref=f3e90]: Audit trail held externally, priced per envelope. ekSign replaces that with a marginal cost per signing event on infrastructure the bank already runs.
+      - generic [ref=f3e91]:
+        - generic [ref=f3e92]: How it works
+        - heading "Two capabilities, joined into one product" [level=2] [ref=f3e93]
+        - paragraph [ref=f3e94]: Every signature is mathematically bound to the exact document and to a verified identity — so nothing about it can be faked, altered, or disputed later.
+        - generic [ref=f3e95]:
+          - generic [ref=f3e96]:
+            - paragraph [ref=f3e97]: "01"
+            - paragraph [ref=f3e98]: Tamper-evident by design
+            - paragraph [ref=f3e99]: Alter one character after signing, and verification fails immediately.
+          - generic [ref=f3e100]:
+            - paragraph [ref=f3e101]: "02"
+            - paragraph [ref=f3e102]: Bound to a verified identity
+            - paragraph [ref=f3e103]: The bank's existing MFA fires at the moment of signing, so the signature is tied to a real, verified customer.
+          - generic [ref=f3e104]:
+            - paragraph [ref=f3e105]: "03"
+            - paragraph [ref=f3e106]: Non-customers verified too
+            - paragraph [ref=f3e107]: Guarantors and co-applicants sign using national digital ID — no bank account or new app required.
+          - generic [ref=f3e108]:
+            - paragraph [ref=f3e109]: "04"
+            - paragraph [ref=f3e110]: One complete audit record
+            - paragraph [ref=f3e111]: Every signature, chained to the ones before it, held entirely on the bank's own systems.
+      - generic [ref=f3e112]:
+        - generic [ref=f3e113]: Who can sign, and how
+        - heading "One customer, many parties, one process" [level=2] [ref=f3e114]
+        - generic [ref=f3e115]:
+          - generic [ref=f3e116]:
+            - paragraph [ref=f3e117]: "01"
+            - paragraph [ref=f3e118]: A single customer
+            - paragraph [ref=f3e119]: A push notification, a review inside the banking app, and one authentication step — the same MFA already used for transfers.
+          - generic [ref=f3e120]:
+            - paragraph [ref=f3e121]: "02"
+            - paragraph [ref=f3e122]: Multiple signatories
+            - paragraph [ref=f3e123]: Loan agreements, joint accounts, and mandate changes often need more than one signature. ekSign supports signing in sequence, in parallel, or a mix of both — the bank's workflow decides the order.
+          - generic [ref=f3e124]:
+            - paragraph [ref=f3e125]: "03"
+            - paragraph [ref=f3e126]: Guarantors and other non-customers
+            - paragraph [ref=f3e127]: A secure link sent from the bank's own domain, opened on a bank-branded page, verified with national digital ID — no bank account or app required.
+      - generic [ref=f3e128]:
+        - generic [ref=f3e129]: ekSign vs a third-party portal
+        - heading "The same signature, on your side of the wall." [level=2] [ref=f3e130]
+        - table [ref=f3e131]:
+          - rowgroup [ref=f3e132]:
+            - row [ref=f3e133]:
+              - columnheader "Third-party e-signature platform" [ref=f3e134]
+              - columnheader "ekSign" [ref=f3e135]
+          - rowgroup [ref=f3e136]:
+            - row [ref=f3e137]:
+              - cell "Customer redirected to another brand's portal" [ref=f3e138]
+              - cell "Customer signs inside your own app or branded page" [ref=f3e139]
+            - row [ref=f3e140]:
+              - cell "Authenticated by vendor SMS OTP or email" [ref=f3e141]
+              - cell "Authenticated by the bank's own MFA, or national digital ID" [ref=f3e142]
+            - row [ref=f3e143]:
+              - cell "Audit trail held by the vendor — the bank is a tenant" [ref=f3e144]
+              - cell "Full audit trail owned and held by the bank" [ref=f3e145]
+            - row [ref=f3e146]:
+              - cell "Fixed per-envelope licence fee" [ref=f3e147]
+              - cell "Marginal cost per signing event, on infrastructure the bank already runs" [ref=f3e148]
+    - generic [ref=f3e150]:
+      - heading "Replace a recurring licence with a capability you own." [level=3] [ref=f3e151]
+      - link "Book a demo" [ref=f3e153] [cursor=pointer]:
+        - /url: /contact
+  - contentinfo [ref=f3e154]:
+    - generic [ref=f3e155]:
+      - generic [ref=f3e156]:
+        - generic [ref=f3e157]:
+          - heading "Products" [level=4] [ref=f3e158]
+          - link "ekShield" [ref=f3e159] [cursor=pointer]:
+            - /url: /ekshield
+          - link "ekProtect" [ref=f3e160] [cursor=pointer]:
+            - /url: /ekprotect
+          - link "ekBind" [ref=f3e161] [cursor=pointer]:
+            - /url: /ekbind
+          - link "ekSign" [ref=f3e162] [cursor=pointer]:
+            - /url: /eksign
+          - link "ekSell" [ref=f3e163] [cursor=pointer]:
+            - /url: /eksell
+          - link "ekKey" [ref=f3e164] [cursor=pointer]:
+            - /url: /ekkey
+          - link "ekPulse" [ref=f3e165] [cursor=pointer]:
+            - /url: /ekpulse
+          - link "ekRules" [ref=f3e166] [cursor=pointer]:
+            - /url: /ekrules
+        - generic [ref=f3e167]:
+          - heading "Company" [level=4] [ref=f3e168]
+          - link "About us" [ref=f3e169] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=f3e170] [cursor=pointer]:
+            - /url: /blog
+          - link "Careers" [ref=f3e171] [cursor=pointer]:
+            - /url: /career
+          - link "Investors" [ref=f3e172] [cursor=pointer]:
+            - /url: /investors
+          - link "Contact" [ref=f3e173] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=f3e174]:
+          - heading "Contact" [level=4] [ref=f3e175]
+          - link "Talk to us" [ref=f3e176] [cursor=pointer]:
+            - /url: /contact
+          - link "LinkedIn" [ref=f3e177] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/ektar-technologies/
+          - link "YouTube" [ref=f3e178] [cursor=pointer]:
+            - /url: https://www.youtube.com/@ektar-technologies
+      - generic [ref=f3e179]:
+        - generic [ref=f3e180]: © Ektar 2022–2026. All rights reserved.
+        - generic [ref=f3e181]:
+          - link "Terms of Use" [ref=f3e182] [cursor=pointer]:
+            - /url: /termsofuse
+          - text: ·
+          - link "Privacy Policy" [ref=f3e183] [cursor=pointer]:
+            - /url: /privacy-policy
+      - generic [ref=f3e184]:
+        - generic [ref=f3e185]:
+          - heading "Singapore" [level=5] [ref=f3e186]
+          - img "Ektar Singapore office" [ref=f3e187]
+          - paragraph [ref=f3e188]: "18 Boon Lay Way #05-95 Tradehub 21, Singapore 609966"
+        - generic [ref=f3e189]:
+          - heading "UAE" [level=5] [ref=f3e190]
+          - img "Ektar UAE office" [ref=f3e191]
+          - paragraph [ref=f3e192]: Ektar Technologies LLC, 606, Latifa Towers, Near World Trade Center, Dubai, UAE
+        - generic [ref=f3e193]:
+          - heading "India" [level=5] [ref=f3e194]
+          - img "Ektar India office" [ref=f3e195]
+          - paragraph [ref=f3e196]: "Rattha Tek Meadows, Ground Floor, Tower A, No: 51, Rajiv Gandhi Salai, Sholinganallur, Chennai, Tamil Nadu 600119, India"

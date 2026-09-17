@@ -43,7 +43,6 @@ export default function EkPulsePage() {
           </>
         }
         description={hero.description}
-        tierLine={hero.badge}
         titleClassName="pulse-title"
         visual={<PulseViz />}
       />

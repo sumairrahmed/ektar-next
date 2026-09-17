@@ -1,10 +1,10 @@
-# SITEMAP.md — Ektar Route Tree (v3)
+# SITEMAP.md — Ektar Route Tree (v4)
 
-Derived by tracing every `href`/`onclick="location.href=…"` actually present in the latest export's `.dc.html` files. Supersedes the v2 sitemap — the nav structure changed from a flat product list to a 3-way surface-based mega-dropdown, and five new pages were added while one was removed.
+Derived by tracing every `href`/`onclick="location.href=…"` actually present in the latest export's `.dc.html` files. **The route tree itself is unchanged from v3** — same 15 pages, same nav structure, no additions or removals this version. What changed since v3 is content within a few pages (see `PAGES.md`), not the sitemap shape. Kept as a full document rather than just a diff note since it's still the authoritative route reference.
 
 ---
 
-## 1. Route tree
+## 1. Route tree — identical to v3
 
 ```
 /                        Home                      index.dc.html
@@ -13,30 +13,30 @@ Derived by tracing every `href`/`onclick="location.href=…"` actually present i
 ├── /ekbind              ekBind                    ekbind.dc.html
 ├── /eksign              ekSign                    eksign.dc.html
 ├── /eksell              ekSell                    eksell.dc.html
-├── /ekkey               ekKey                     ekkey.dc.html            ← NEW
-├── /ekpulse             ekPulse                   ekpulse.dc.html          ← NEW
-├── /ekrules             ekRules                   ekrules.dc.html          ← NEW
-├── /protect-the-user    Protect the User          protect-the-user.dc.html ← NEW
-├── /protect-the-device  Protect the Device        protect-the-device.dc.html ← NEW
-├── /protect-the-app     Protect the App           protect-the-app.dc.html  ← NEW
+├── /ekkey               ekKey                     ekkey.dc.html
+├── /ekpulse             ekPulse                   ekpulse.dc.html
+├── /ekrules             ekRules                   ekrules.dc.html
+├── /protect-the-user    Protect the User          protect-the-user.dc.html
+├── /protect-the-device  Protect the Device        protect-the-device.dc.html
+├── /protect-the-app     Protect the App           protect-the-app.dc.html
 ├── /about               About                     about.dc.html
-├── /investors            Investors                 investors.dc.html       ← NEW
-├── /blog                 Blog (placeholder posts) blog.dc.html
-├── /join-us              Careers                  careers.dc.html
-├── /contact              Contact                  contact.dc.html
-├── /termsofuse            Terms of Use             (linked from footer; not in this export)
-└── /privacy-policy        Privacy Policy           (linked from footer; not in this export)
+├── /investors           Investors                 investors.dc.html
+├── /blog                Blog (placeholder posts)  blog.dc.html
+├── /join-us             Careers                   careers.dc.html
+├── /contact             Contact                   contact.dc.html
+├── /termsofuse           Terms of Use              (linked from footer; not in this export)
+└── /privacy-policy       Privacy Policy            (linked from footer; not in this export)
 ```
 
-**`/ai` is retired** — not present in this export. If it exists in a live deployment from before, treat it as removed; don't rebuild it, and remove any lingering link to it.
+**`/ai` remains retired** — still not present in this export.
 
-15 real pages now (was 10 in v2): +6 new (ekKey, ekPulse, ekRules, Protect the User/Device/App, Investors — that's actually 7 new; -1 removed (AI) nets to +6 net new routes.
+15 real pages, unchanged count from v3.
 
-Same filename-vs-route-name inconsistency as v2: the source file for ekShield is `authentication.dc.html`. Keep using `/ekshield` as the route for consistency with every nav label and cross-link — don't mirror the filename.
+Same filename-vs-route-name inconsistency as before: the source file for ekShield is `authentication.dc.html`. Keep using `/ekshield` as the route for consistency with every nav label and cross-link — don't mirror the filename.
 
 ---
 
-## 2. Primary navigation (topbar, every page) — restructured
+## 2. Primary navigation (topbar, every page) — unchanged from v3
 
 ```
 Home
@@ -96,10 +96,10 @@ Same single-anchor pattern as v2 (the old `#layers` anchor is gone along with th
 
 ## 5. Cross-linking pattern
 
-- Every product page still carries a back-link ("← All layers" or "← All products", inconsistent target as in v2 — confirm exact href per page rather than assuming).
-- **New pattern: the "One decision engine" callout.** Appears on the homepage and all three `/protect-the-*` surface pages, always describing how that page's signals feed into ekRules. ekRules itself has no such callout (it *is* the destination). Model this as a reusable component that every surface-adjacent page includes, pointing at `/ekrules`.
-- **New pattern: tier badges.** ekBind, ekKey, ekPulse, ekRules, and ekSell each show a small status badge ("Shipping 2026", "Building now", "Live") on their own page, matching their tier in the homepage's "trust suite" listing. ekShield and ekProtect don't show this badge (they're already-live products, signalled through their main status pill instead).
-- **New pattern: explicit cross-sell.** ekProtect's page explicitly links to ekPulse ("Full malware tracking, elimination, and behavioural analysis run on ekPulse — see how →") since ekProtect's own scope narrowed. This is the only explicit product-to-product cross-sell link found in the export; don't invent similar ones for other product pairs without source backing.
+- Every product page still carries a back-link ("← All layers" or "← All products", inconsistent target — confirm exact href per page rather than assuming).
+- **The "One decision engine" callout.** Appears on the homepage and all three `/protect-the-*` surface pages, always describing how that page's signals feed into ekRules. ekRules itself has no such callout (it *is* the destination). Model this as a reusable component that every surface-adjacent page includes, pointing at `/ekrules`.
+- **Tier badges are gone as of this version.** ekBind, ekKey, ekPulse, and ekRules no longer show a "Shipping 2026"/"Building now" status badge on their own page, and the homepage's "trust suite" list is no longer grouped by tier either (`PAGES.md` §1.2). Every product now reads as simply live/available — don't build a roadmap-stage badge component unless the client asks for one back.
+- **Explicit cross-sell.** ekProtect's page explicitly links to ekPulse ("Full malware tracking, elimination, and behavioural analysis run on ekPulse — see how →") since ekProtect's own scope narrowed (this dates to v3, unchanged). This remains the only explicit product-to-product cross-sell link found in the export; don't invent similar ones for other product pairs without source backing.
 - Every page still repeats the full footer and carries at least one "Book a demo" CTA to `/contact` — except Careers and Investors, whose primary CTA language is "Get in touch" (same destination, different label — see `PAGES.md` §16).
 
 ---

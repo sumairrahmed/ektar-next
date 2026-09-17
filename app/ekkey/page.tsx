@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import SurfaceHero from "@/components/SurfaceHero";
-import FaceIdVisual from "@/components/FaceIdVisual";
+import KeyBindDemo from "@/components/KeyBindDemo";
 import { hero, capabilities, howItWorks, whyNow, closing } from "@/lib/content/products/ekkey";
 
 export const metadata: Metadata = {
@@ -45,8 +45,7 @@ export default function EkKeyPage() {
           </>
         }
         description={hero.description}
-        tierLine={hero.badge}
-        visual={<FaceIdVisual />}
+        visual={<KeyBindDemo />}
       />
 
       <div className="wrap">

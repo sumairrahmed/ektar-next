@@ -1,10 +1,25 @@
-# PAGES.md — Ektar Page Content & Layout (v3, verified from source)
+# PAGES.md — Ektar Page Content & Layout (v4, verified from source)
 
-All copy transcribed verbatim from the client's latest theme export. This supersedes the v2 `PAGES.md` — the product lineup, navigation, homepage, and several individual pages changed substantially. Referenced by `CLAUDE.md`. See `SITEMAP.md` for the route tree.
+All copy transcribed verbatim from the client's latest theme export. This supersedes v3. Referenced by `CLAUDE.md`. See `SITEMAP.md` for the route tree.
 
 ---
 
-## What changed since v2 — read this first
+## What changed since v3 — read this first
+
+This was a lighter pass than v2→v3: **no new pages or products, no IA changes.** 11 of 15 pages are byte-identical to v3 (About, ekShield, ekProtect, ekPulse, ekRules, ekSell, Blog, Careers, Contact, and both `/protect-the-app` and `/protect-the-device`). What changed:
+
+- **Homepage's "trust suite" list is no longer tiered.** The old "Live today / Shipping through 2026 / Building now" three-panel breakdown is gone — now a single flat, numbered list of all 7 products. See §1.2.
+- **Homepage hero visual scene order fixed** — now matches the rotator line's word order (User → App → Device). See §1.1.
+- **Tier badges removed** from ekBind, ekKey, ekPulse, ekRules pages, and the tier-summary line removed from `/protect-the-user`. See each page below.
+- **ekBind, ekKey, and ekSign got substantially richer hero visuals** — new illustrated/animated demonstrations of each product's actual mechanism. Full copy and structure in each page's section (§5, §8, §6 respectively); full animation detail in `DESIGN.md` §4.4–4.6.
+- **Terminology standardized to "SMS OTP"** sitewide, replacing "text-message codes" (homepage, `/protect-the-user`).
+- **Two stats updated:** homepage proof line "At a top-3 UAE bank" → "At 2 top-tier UAE banks"; About's and Investors' founder-tenure line now says "~100 years... in global banking and financial services" instead of naming the combined 78+ years at Standard Chartered specifically in that one line (Standard Chartered is still named elsewhere on both pages).
+
+Everything else in this document — page order, all other copy, all unchanged pages — carries forward from v3 exactly. Where a page's section below doesn't mention a v4 change, assume it's identical to the v3 content already documented there.
+
+---
+
+## What changed since v2 (superseded by the above, kept for history)
 
 - **The suite grew from 5 to 8 products.** New: **ekKey** (passkeys), **ekPulse** (behavioural biometrics), **ekRules** (risk decisioning engine). ekShield, ekProtect, ekBind, ekSign, ekSell all continue to exist.
 - **Three new "surface" pages** sit between the homepage and individual products: `/protect-the-user`, `/protect-the-device`, `/protect-the-app` — each groups several products by which attack surface they defend.
@@ -38,8 +53,6 @@ A status pill sits near the logo, changing per page: "Systems live" (Home), "Sin
 
 ## 1. Home (`index.dc.html` → `/`)
 
-Entirely restructured from v2. New section order:
-
 ### 1.1 Hero
 - **Eyebrow:** "Digital security for banks"
 - **Rotator line:** "Protect **the User** / **the App** / **the Device**" (unchanged mechanic — `DESIGN.md` §4)
@@ -47,39 +60,30 @@ Entirely restructured from v2. New section order:
 - **Subhead:** "Ektar protects the user, the device, and the app — Built by ex-bankers who've run the channels they now secure."
 - **Primary CTA:** "Book a demo" → Contact
 - **Secondary CTA:** "See the suite" → `#solutions` anchor
-- **Hero visual:** the new `cycle3` tri-scene cross-fade (`DESIGN.md` §4.1) — "Protect the user" (Login attempt: Customer verified/Device-bound · no code sent; chips: SMS OTP replay blocked, Call-centre impersonation challenged) → "Protect the device" (Session check: Device bound/Same phone · same SIM; chips: SIM swap attempt blocked, Rooted device denied) → "Protect the app" (Runtime check: App verified/No tampering detected; chips: Overlay attack blocked, Remote access tool suspended)
+- **Hero visual:** the `cycle3` tri-scene cross-fade (`DESIGN.md` §4.1), **now in User → App → Device order** (fixed in this version to match the rotator line above it — was User → Device → App): "Protect the user" (Login attempt: Customer verified/Device-bound · no code sent; chips: SMS OTP replay blocked, Call-centre impersonation challenged) → "Protect the app" (Runtime check: App verified/No tampering detected; chips: Overlay attack blocked, Remote access tool suspended) → "Protect the device" (Session check: Device bound/Same phone · same SIM; chips: SIM swap attempt blocked, Rooted device denied)
 
 ### 1.2 The trust suite (id: `solutions`)
 **Heading:** "One suite. Seven products, one engine."
 **Intro:** "Each product is licensed on its own — deploy one or all seven, and the portals, APIs and SDKs behave the same either way. The whole suite runs inside your own infrastructure, with no runtime dependency on Ektar."
 
-Three tiered panels, each reusing the `.solpanel`/`.sol` list component with its own header:
+**No longer tiered — as of this version this is a single flat, numbered list**, `.solpanel`/`.sol`, same component pattern used on every other page's product listings (the old three-panel "Live today / Shipping through 2026 / Building now" breakdown with `.sp-head` tier headers is gone):
 
-**Live today · Two products**
 | # | Product | Role | Description |
 |---|---|---|---|
 | 01 | ekShield | Authentication | Replaces one-time codes with a login that can't be phished. |
 | 02 | ekProtect | Device & app integrity | Spots malware, fake screens, and compromised phones in real time. |
-
-**Shipping through 2026 · Three products**
-| # | Product | Role | Description |
-|---|---|---|---|
 | 03 | ekBind | SIM & network trust | Catches a SIM swap before a transaction goes through. |
 | 04 | ekSign | Document signing | Signed documents that can't be altered after the fact, right inside your app. |
 | 05 | ekKey | Passkeys | Login without a password at all, tied to the customer's own device. |
-
-**Building now · Two products**
-| # | Product | Role | Description |
-|---|---|---|---|
 | 06 | ekPulse | Behavioural biometrics | Learns how a real customer types and moves, and flags when it isn't them. |
 | 07 | ekRules | Risk decisioning | Takes every signal above and makes one real-time call: allow, verify further, or block. |
 
-**Note: ekSell is not part of this seven-product "trust suite" list** — it remains a separate distribution product, listed in the footer but not in this tiered breakdown (matches its positioning in v2 as "Ektar's founding platform", distinct from the fraud-prevention suite).
+**ekSell is still not part of this list** — it remains a separate distribution product, listed in the footer but not here (matches its positioning as "Ektar's founding platform", distinct from the fraud-prevention suite).
 
 ### 1.3 Proof strip
-- **Live** — At a top-3 UAE bank
+- **Live** — **At 2 top-tier UAE banks** *(updated this version — was "At a top-3 UAE bank")*
 - **Contracted** — With a top-3 Oman bank
-- **Secured** — Over 10 million authentications *(new stat, not present in v2)*
+- **Secured** — Over 10 million authentications
 - **Aligned with** — CBUAE · RBI · SAMA · FIDO
 - Decorative hex/crypto-term ticker beneath (unchanged): `ecdsa p-256 · sha-256 · fido2 · device-bound`
 
@@ -87,11 +91,11 @@ Three tiered panels, each reusing the `.solpanel`/`.sol` list component with its
 **Heading:** "Three places fraud gets in. We close all three."
 **Intro:** "Every attack on a banking app is really an attack on one of three things — the customer, their phone, or the app itself."
 
-Three cards (replaces v2's six-item flat attack-surface grid):
+Three cards:
 
 **Protect the user** — ekShield · ekKey · ekPulse · ekSign
 > A login that can't be phished, copied, or intercepted — closing the door on stolen one-time codes and call-centre scams.
-Threats listed: Stolen text-message codes · Phishing and fake login pages · Call-centre social engineering · Deepfakes and synthetic identities
+Threats listed: **Stolen SMS OTP** *(updated this version — was "Stolen text-message codes")* · Phishing and fake login pages · Call-centre social engineering · Deepfakes and synthetic identities
 Link: "Open →" → `/protect-the-user`
 
 **Protect the device** — ekBind · ekProtect · ekShield
@@ -108,14 +112,16 @@ Link: "Open →" → `/protect-the-app`
 
 ### 1.5 Why now (regulatory)
 **Heading:** "Regulators are ordering the upgrade"
-**Intro:** "Across the Gulf, South Asia, and Southeast Asia, one-time codes sent by text are being banned outright — with hard deadlines."
+**Intro:** "Across the Gulf, South Asia, and Southeast Asia, **SMS OTP** is being banned outright — with hard deadlines." *(updated this version — was "one-time codes sent by text")*
 
 - **UAE.** Text and email codes banned. Banks must move to in-app verification and passkeys by **March 2026**.
 - **Saudi Arabia.** Device-bound login required. Fines of up to SAR 5 million per breach.
 - **India.** Banks can no longer rely on text codes alone for high-risk transactions.
 - **Singapore & Philippines.** Text-message codes are being phased out for retail banking.
 
-*(Condensed from v2's six-market list to four bullets — Malaysia is no longer on the homepage version of this list, though it still appears on `/protect-the-device`, §12 below. Don't drop Malaysia from the product/surface pages that still cite it.)*
+*(The section heading/intro switched to "SMS OTP" this version, but — checked precisely against the source — these four bullet points themselves still use "Text and email codes" / "text codes alone" / "Text-message codes", unchanged. The terminology standardization wasn't a full find-and-replace; don't over-correct these four lines to "SMS OTP" on your own, they're accurately transcribed as still using the older phrasing.)*
+
+*(Also unchanged from v3: condensed to these four bullets vs. a six-market list on earlier versions — Malaysia is still absent from the homepage version, though it still appears on `/protect-the-device`, §12 below.)*
 
 ### 1.6 Why it matters (stat band)
 **Heading:** "Fraud has outgrown yesterday's defences"
@@ -123,10 +129,10 @@ Link: "Open →" → `/protect-the-app`
 | # | Stat | Label | Detail |
 |---|---|---|---|
 | Data/01 | $485B | Lost to banking fraud | $485 billion lost to banking fraud in a single year. |
-| Data/02 | 93% | Still on text-message codes | 93% of banks still rely on text-message codes — the method regulators are banning. |
+| Data/02 | 93% | **Still on SMS OTP** | 93% of banks still rely on **SMS OTP** — the method regulators are banning. |
 | Data/03 | +12x | AI-generated fraud | AI-generated fraud is up more than 12x in the last year alone. |
 
-*(The $485B and 93% figures are unchanged from v2. The AI-fraud growth figure is now framed as "+12x" rather than v2's "+1,210%" — same underlying magnitude, reworded for punch; use "+12x" going forward, it's the current copy.)*
+*(Data/02's label and detail line switched from "text-message codes" to "SMS OTP" this version. $485B and +12x unchanged.)*
 
 ### 1.7 Closing CTA
 "Every bank in these markets has a deadline. Let's talk about yours." → "Book a demo"
@@ -141,7 +147,7 @@ Mostly unchanged from v2 (founders, advisory board, vision/mission all identical
 - **Eyebrow:** "Our story — Dubai · Singapore · Chennai"
 - **H1:** "We think like bankers. We build like technologists."
 - **Intro:** "Ektar was founded in 2022 by three experienced ex-bankers. We build digital security solutions for banking's digital channels — and we have lived inside the institutions we now serve, which means we understand the operational constraints, compliance requirements, and procurement realities that shape how banks actually adopt technology."
-- **At a glance:** Founded 2022 · Founders: 3 ex-bankers · Markets: GCC · South Asia · SEA · Offices: Dubai · Singapore · Chennai. Sub-line: "Standard Chartered leadership backgrounds — we have run the channels we now secure."
+- **At a glance:** Founded 2022 · Founders: 3 ex-bankers · Markets: GCC · South Asia · SEA · Offices: Dubai · Singapore · Chennai. Sub-line: **"~100 years in global banking — we've run the channels we now secure."** *(updated this version — was "Standard Chartered leadership backgrounds — we have run the channels we now secure". The founders' Standard Chartered background is still named explicitly in each founder's own bio further down this page — only this one summary sub-line was generalized.)*
 
 *(The v2 "Live, not theoretical" callout block has been removed.)*
 
@@ -245,18 +251,18 @@ Inputs: User, device, and app signals ("every layer the bank deploys"). Output: 
 
 ## 5. ekBind — SIM & Network Trust (`ekbind.dc.html` → `/ekbind`)
 
-Mostly unchanged from v2 — same core mechanism, same background ledger visual. Real changes: a **"Shipping 2026" status badge** now appears, and "Why now" was rewritten with sharper Saudi/Malaysia framing.
+Core mechanism and copy unchanged from v3. **This version's real change is visual:** the hero now leads with a new illustrated SVG diagram, and the old "Shipping 2026" status badge is gone.
 
 - **Status pill:** "SIM verified"
 - **Eyebrow:** "SIM binding · ekBind"
 - **H1:** "Bind the account to the SIM. Catch the swap."
 - **Description:** "ekBind verifies the SIM behind every session. Silent Network Authentication confirms the SIM directly with the mobile operator over the data connection — no code, no customer action. Reverse SMS proves possession of the SIM from the device itself. Both bind the account to a known SIM, so a swapped SIM or a moved number is caught before a transaction proceeds."
-- **Badge:** "Shipping 2026" *(new)*
+- **Badge:** none *(the "Shipping 2026" badge from the previous version is gone)*
 - CTA: "Book a demo" · Back-link: "← All products"
 
 **Background ledger visual** (unchanged): masked phone numbers across UAE/Oman/India/Singapore/Saudi/Bahrain, tagged with SIM hashes, one each tagged "sna verified · operator confirmed", "swap detected", "reverse sms · sent from device".
 
-**Hero visual** (unchanged): Device→Banking app→Operator flow — Silent Network Authentication "Verified", Reverse SMS "Sent from device", SIM swap/port-out "None detected", Code sent to customer "None".
+**Hero visual — NEW illustrated SIM/tower diagram** (`DESIGN.md` §4.4): a small animated SVG now sits above the existing checklist — a phone icon (SIM chip highlighted) on the left, a cell tower with pulsing broadcast-wave arcs on the right, connected by animated signal lines, labelled "SIM verified". Beneath it, the checklist is unchanged: Silent Network Authentication "Verified", Reverse SMS "Sent from device", SIM swap/port-out "None detected", Code sent to customer "None".
 
 **How binding works** (unchanged, 3 items): 01. Silent Network Authentication · 02. Reverse SMS · 03. SIM-swap and port-out detection.
 
@@ -282,7 +288,7 @@ Mostly unchanged from v2 — same core mechanism, same background ledger visual.
 
 **Background ledger visual** (unchanged): document types (mandate change, FATCA declaration, suitability form, etc.), one marked "signed · sha-256 sealed".
 
-**Hero visual — execution status** (unchanged): "2 of 3 signed" — Primary borrower Signed, Co-borrower Signed, Guarantor Awaiting. Authentication: Bank MFA · national ID. Seal: `SHA-256 a3f9·c2d1·e4b8`.
+**Hero visual — execution status, now ANIMATED** (`DESIGN.md` §4.6 — new this version, was a static snapshot before): the card now plays through a real completion sequence rather than showing a fixed state. It starts at "2 of 3 signed" — Primary borrower Signed, Co-borrower Signed, Guarantor **Awaiting** — then animates to "**3 of 3 signed**" as the Guarantor row switches in place to **Signed**. Authentication: Bank MFA · national ID, unchanged. The seal line animates too: it cycles through three decoy hash values (`7d2x·91qz`, `c0e4·b8p1`, `4f7a·d3m2`) before settling on the real seal `SHA-256 a3f9·c2d1·e4b8` with a glow effect, dramatizing the seal "computing" and locking in. Build this as a real animated sequence, not a static end-state screenshot.
 
 ### 6.1 "Why banks move signing in-house" (unchanged from v2)
 **Heading:** "A third-party portal breaks the journey and holds your record."
@@ -345,15 +351,18 @@ Same intro paragraph and same three-row problem framing (Experience / Identity /
 
 ---
 
-## 8. ekKey — Passkeys (`ekkey.dc.html` → `/ekkey`) — NEW PAGE
+## 8. ekKey — Passkeys (`ekkey.dc.html` → `/ekkey`) — unchanged content from v3 except badge/hero visual
 
 - **Eyebrow:** "ekKey · Protect the User"
 - **H1:** "Login without a password — or a code — at all"
 - **Description:** "ekKey replaces passwords and one-time codes with a passkey tied to the customer's own device — the same industry standard already used by major banks and tech platforms worldwide."
-- **Badge:** "Shipping 2026"
+- **Badge:** none *(the "Shipping 2026" badge from the previous version is gone)*
 - CTA: "Book a demo"
 
-**Hero visual:** "Verifying it's you…" → "Signed in — No password used"
+**Hero visual — NEW three-scene device-binding demo** (`DESIGN.md` §4.5 — replaces the old two-state "Verifying it's you… → Signed in" visual entirely):
+1. **"This device"** — key icon glowing/active, caption "Passkey active · signs in instantly"
+2. **"Copied to another device"** — the same key icon shaking with a red X badge, caption "Rejected · not the enrolled hardware"
+3. **"Device-bound by design"** — shield-checkmark icon, caption "A stolen passkey file is worthless"
 
 ### 8.1 Capabilities — "A credential that can't be stolen, because it never travels"
 - **No password to steal** — there's nothing to phish, guess, or leak in a data breach; the credential never leaves the customer's device.
@@ -373,12 +382,12 @@ Same intro paragraph and same three-row problem framing (Experience / Identity /
 
 ---
 
-## 9. ekPulse — Behavioural Biometrics (`ekpulse.dc.html` → `/ekpulse`) — NEW PAGE
+## 9. ekPulse — Behavioural Biometrics (`ekpulse.dc.html` → `/ekpulse`) — unchanged from v3
 
 - **Eyebrow:** "ekPulse · Protect the User & App" *(the only product page explicitly tagged with two surfaces in its own eyebrow)*
 - **H1:** "The way someone types and moves is as unique as a fingerprint"
 - **Description:** "ekPulse learns how a genuine customer holds their phone, types, and swipes — then flags the moment those patterns don't match, even if every password and code was entered correctly."
-- **Badge:** "Building now"
+- **Badge:** none *(the "Building now" badge from the previous version is gone — this is the only change on this page; everything else, including the animation set, is byte-identical to v3)*
 - CTA: "Book a demo"
 
 **Hero visual:** "Continuous behaviour check" — "Pattern matched" / "Reviewing signal…"
@@ -401,14 +410,14 @@ Same intro paragraph and same three-row problem framing (Experience / Identity /
 
 ---
 
-## 10. ekRules — Risk Decisioning (`ekrules.dc.html` → `/ekrules`) — NEW PAGE
+## 10. ekRules — Risk Decisioning (`ekrules.dc.html` → `/ekrules`) — unchanged from v3 except badge removed
 
 The explicit "decision engine" every other product and surface page now points to.
 
 - **Eyebrow:** "ekRules · All three surfaces"
 - **H1:** "Every signal, one decision, in real time"
 - **Description:** "ekRules takes every signal from the user, device, and app — a login, a SIM check, a tamper flag — and makes one call in milliseconds: allow, verify further, or block."
-- **Badge:** "Building now"
+- **Badge:** none *(the "Building now" badge from the previous version is gone — this is the only change on this page)*
 - CTA: "Book a demo"
 
 **Hero visual — "Every signal, one verdict":** User → Device → App all feed into ekRules → three possible outputs: Allow / Verify / Block.
@@ -431,18 +440,18 @@ The explicit "decision engine" every other product and surface page now points t
 
 ---
 
-## 11. Protect the User (`protect-the-user.dc.html` → `/protect-the-user`) — NEW SURFACE PAGE
+## 11. Protect the User (`protect-the-user.dc.html` → `/protect-the-user`)
 
 - **Eyebrow:** "Protect the User"
 - **H1:** "The person is often the easiest way in. We close that door."
 - **Description:** "Fraud rarely breaks through a bank's systems — it goes around them, through a phished login, a stolen code, or a convincing fake. These products make the person themselves the hardest part to fool."
-- **Tier summary line:** "ekShield — live today · ekKey, ekSign — shipping through 2026 · ekPulse — building now"
+- **Tier summary line:** none *(removed this version — was "ekShield — live today · ekKey, ekSign — shipping through 2026 · ekPulse — building now")*
 - CTA: "Book a demo"
 
 **Hero visual** — two mini panels: **ekShield** (Login attempt: Customer verified/Device-bound · no code sent; chips: SMS OTP replay blocked, Call-centre impersonation challenged) and **ekPulse** (Behaviour check: Behaviour verified/Typing pattern matched; chips: Session takeover flagged, Synthetic identity challenged).
 
 ### 11.1 The threats — "Four ways fraud targets the person, not the system"
-- **Stolen text-message codes** — the most exploited method in retail banking today. *Now banned across five markets*
+- **Stolen SMS OTP** *(updated this version — was "Stolen text-message codes")* — the most exploited method in retail banking today. *Now banned across five markets*
 - **Phishing and fake login pages** — designed to look identical to the real thing. *Credential capture*
 - **Call-centre social engineering** — a convincing voice, not a broken system. *Human channel*
 - **Deepfakes and synthetic identities** — AI-generated voices and faces, up over 12x in the past year. *Fastest-growing vector*
@@ -463,7 +472,7 @@ The explicit "decision engine" every other product and surface page now points t
 
 ---
 
-## 12. Protect the Device (`protect-the-device.dc.html` → `/protect-the-device`) — NEW SURFACE PAGE
+## 12. Protect the Device (`protect-the-device.dc.html` → `/protect-the-device`) — byte-identical to v3
 
 - **Eyebrow:** "Protect the Device"
 - **H1:** "A stolen password is useless without the right phone. We make sure it stays that way."
@@ -494,7 +503,7 @@ The explicit "decision engine" every other product and surface page now points t
 
 ---
 
-## 13. Protect the App (`protect-the-app.dc.html` → `/protect-the-app`) — NEW SURFACE PAGE
+## 13. Protect the App (`protect-the-app.dc.html` → `/protect-the-app`) — byte-identical to v3
 
 - **Eyebrow:** "Protect the App"
 - **H1:** "Assume the app is already being tampered with. We catch it while it's happening."
@@ -525,7 +534,7 @@ Caption: "Scanning continuously · in real time."
 
 ---
 
-## 14. Investors (`investors.dc.html` → `/investors`) — NEW PAGE
+## 14. Investors (`investors.dc.html` → `/investors`) — unchanged except founder-tenure line
 
 - **Status pill:** "Since 2022"
 - **H1:** "Investors"
@@ -539,7 +548,9 @@ Caption: "Scanning continuously · in real time."
 
 ### 14.2 The team
 **Heading:** "Three ex-bankers, decades inside the institutions we now serve"
-> Our founders spent a combined 78+ years in senior roles at Standard Chartered Bank, across consumer banking, technology, and product leadership. Our advisory board includes former senior executives from Emirates NBD, Standard Chartered, and experienced venture investors.
+> Our founders bring **~100 years of combined leadership in global banking and financial services**, across consumer banking, technology, and product leadership. Our advisory board includes former senior executives from Emirates NBD, Standard Chartered, and experienced venture investors.
+
+*(Updated this version — was "Our founders spent a combined 78+ years in senior roles at Standard Chartered Bank..." The advisory-board sentence is unchanged. This mirrors the same rewording applied to About's founder-tenure sub-line, §2.)*
 
 **Closing:** "Interested in investing in Ektar? Get in touch to start the conversation." → "Get in touch"
 

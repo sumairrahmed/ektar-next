@@ -1,0 +1,187 @@
+- generic [active] [ref=f6e1]:
+  - banner [ref=f6e2]:
+    - link "Ektar home" [ref=f6e3] [cursor=pointer]:
+      - /url: /
+      - img "Ektar" [ref=f6e4]
+    - navigation [ref=f6e5]:
+      - link "Home" [ref=f6e7] [cursor=pointer]:
+        - /url: /
+      - link "Protect the User" [ref=f6e9] [cursor=pointer]:
+        - /url: /protect-the-user
+      - link "Protect the Device" [ref=f6e11] [cursor=pointer]:
+        - /url: /protect-the-device
+      - link "Protect the App" [ref=f6e13] [cursor=pointer]:
+        - /url: /protect-the-app
+      - link "About" [ref=f6e15] [cursor=pointer]:
+        - /url: /about
+    - button "Toggle theme" [ref=f6e16] [cursor=pointer]
+    - link "Book a demo" [ref=f6e19] [cursor=pointer]:
+      - /url: /contact
+  - generic [ref=f6e20]:
+    - generic [ref=f6e22]: Seven products
+    - generic [ref=f6e24]: One decision engine — ekRules weighs every signal the three surfaces emit.
+  - generic [ref=f6e25]:
+    - generic [ref=f6e29]:
+      - generic [ref=f6e30]:
+        - paragraph [ref=f6e31]: Protect the User
+        - heading "The person is often the easiest way in. We close that door." [level=1] [ref=f6e33]:
+          - generic [ref=f6e34]: The person is often the
+          - generic [ref=f6e35]:
+            - text: easiest way in.
+            - emphasis [ref=f6e36]: We close that door.
+        - paragraph [ref=f6e37]: Fraud rarely breaks through a bank's systems — it goes around them, through a phished login, a stolen code, or a convincing fake. These products make the person themselves the hardest part to fool.
+        - link "Book a demo" [ref=f6e39] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f6e45]:
+        - generic [ref=f6e46]: 09:41
+        - generic [ref=f6e52]:
+          - generic [ref=f6e53]:
+            - paragraph [ref=f6e54]: ekShield
+            - paragraph [ref=f6e55]: Login attempt
+            - generic [ref=f6e59]:
+              - text: Customer verified
+              - generic [ref=f6e60]: Device-bound · no code sent
+            - generic [ref=f6e61]:
+              - generic [ref=f6e62]:
+                - text: SMS OTP replay
+                - generic [ref=f6e64]: blocked
+              - generic [ref=f6e65]:
+                - text: Call-centre impersonation
+                - generic [ref=f6e67]: challenged
+          - generic [ref=f6e68]:
+            - paragraph [ref=f6e69]: ekPulse
+            - paragraph [ref=f6e70]: Behaviour check
+            - generic [ref=f6e74]:
+              - text: Behaviour verified
+              - generic [ref=f6e75]: Typing pattern matched
+            - generic [ref=f6e76]:
+              - generic [ref=f6e77]:
+                - text: Session takeover
+                - generic [ref=f6e79]: flagged
+              - generic [ref=f6e80]:
+                - text: Synthetic identity
+                - generic [ref=f6e82]: challenged
+    - generic [ref=f6e83]:
+      - generic [ref=f6e84]:
+        - generic [ref=f6e85]: The threats
+        - heading "Four ways fraud targets the person, not the system" [level=2] [ref=f6e86]
+        - generic [ref=f6e87]:
+          - generic [ref=f6e88]:
+            - paragraph [ref=f6e91]: Stolen SMS OTP
+            - paragraph [ref=f6e92]: The most exploited method in retail banking today.
+            - paragraph [ref=f6e93]: Now banned across five markets
+          - generic [ref=f6e94]:
+            - paragraph [ref=f6e98]: Phishing and fake login pages
+            - paragraph [ref=f6e99]: Designed to look identical to the real thing.
+            - paragraph [ref=f6e100]: Credential capture
+          - generic [ref=f6e101]:
+            - paragraph [ref=f6e105]: Call-centre social engineering
+            - paragraph [ref=f6e106]: A convincing voice, not a broken system.
+            - paragraph [ref=f6e107]: Human channel
+          - generic [ref=f6e108]:
+            - paragraph [ref=f6e113]: Deepfakes and synthetic identities
+            - paragraph [ref=f6e114]: AI-generated voices and faces, up over 12x in the past year.
+            - paragraph [ref=f6e115]: Fastest-growing vector
+      - generic [ref=f6e116]:
+        - generic [ref=f6e117]: The products
+        - heading "Four products that protect the person" [level=2] [ref=f6e118]
+        - generic [ref=f6e119]:
+          - link "01 ekShield Authentication Replaces one-time codes with a login that can't be phished — device-bound, working across mobile, web, call centre, ATM, and 3DS." [ref=f6e120] [cursor=pointer]:
+            - /url: /ekshield
+            - generic [ref=f6e121]: "01"
+            - generic [ref=f6e122]: ekShield
+            - generic [ref=f6e123]: Authentication
+            - paragraph [ref=f6e124]: Replaces one-time codes with a login that can't be phished — device-bound, working across mobile, web, call centre, ATM, and 3DS.
+          - link "02 ekKey Passkeys Login without a password at all, using the industry-standard FIDO2 passkey tied to the customer's own device." [ref=f6e125] [cursor=pointer]:
+            - /url: /ekkey
+            - generic [ref=f6e126]: "02"
+            - generic [ref=f6e127]: ekKey
+            - generic [ref=f6e128]: Passkeys
+            - paragraph [ref=f6e129]: Login without a password at all, using the industry-standard FIDO2 passkey tied to the customer's own device.
+          - link "03 ekSign Document signing Signs banking documents against an identity the suite has already proven, so a signed record can't be altered after the fact." [ref=f6e130] [cursor=pointer]:
+            - /url: /eksign
+            - generic [ref=f6e131]: "03"
+            - generic [ref=f6e132]: ekSign
+            - generic [ref=f6e133]: Document signing
+            - paragraph [ref=f6e134]: Signs banking documents against an identity the suite has already proven, so a signed record can't be altered after the fact.
+          - link "04 ekPulse Behavioural biometrics Learns how a real customer types and moves, so it can flag the moment someone else is in control." [ref=f6e135] [cursor=pointer]:
+            - /url: /ekpulse
+            - generic [ref=f6e136]: "04"
+            - generic [ref=f6e137]: ekPulse
+            - generic [ref=f6e138]: Behavioural biometrics
+            - paragraph [ref=f6e139]: Learns how a real customer types and moves, so it can flag the moment someone else is in control.
+        - generic [ref=f6e141]:
+          - paragraph [ref=f6e142]: One decision engine
+          - paragraph [ref=f6e143]: "Every signal from this page — a login, a signature, a typing pattern — feeds into ekRules alongside the device and app surfaces. One engine decides in real time: allow, verify further, or block."
+      - generic [ref=f6e146]:
+        - generic [ref=f6e147]: Why now
+        - heading "Regulators are banning the old way of proving it's you" [level=2] [ref=f6e148]
+        - paragraph [ref=f6e152]:
+          - strong [ref=f6e153]: UAE (CBUAE), Saudi Arabia (SAMA), India (RBI), Singapore (MAS), and the Philippines (BSP).
+          - text: have all banned or are phasing out SMS one-time codes as a standalone authentication method.
+    - generic [ref=f6e155]:
+      - heading "Ready to close the door on stolen logins?" [level=3] [ref=f6e156]
+      - link "Book a demo" [ref=f6e158] [cursor=pointer]:
+        - /url: /contact
+  - contentinfo [ref=f6e159]:
+    - generic [ref=f6e160]:
+      - generic [ref=f6e161]:
+        - generic [ref=f6e162]:
+          - heading "Products" [level=4] [ref=f6e163]
+          - link "ekShield" [ref=f6e164] [cursor=pointer]:
+            - /url: /ekshield
+          - link "ekProtect" [ref=f6e165] [cursor=pointer]:
+            - /url: /ekprotect
+          - link "ekBind" [ref=f6e166] [cursor=pointer]:
+            - /url: /ekbind
+          - link "ekSign" [ref=f6e167] [cursor=pointer]:
+            - /url: /eksign
+          - link "ekSell" [ref=f6e168] [cursor=pointer]:
+            - /url: /eksell
+          - link "ekKey" [ref=f6e169] [cursor=pointer]:
+            - /url: /ekkey
+          - link "ekPulse" [ref=f6e170] [cursor=pointer]:
+            - /url: /ekpulse
+          - link "ekRules" [ref=f6e171] [cursor=pointer]:
+            - /url: /ekrules
+        - generic [ref=f6e172]:
+          - heading "Company" [level=4] [ref=f6e173]
+          - link "About us" [ref=f6e174] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=f6e175] [cursor=pointer]:
+            - /url: /blog
+          - link "Careers" [ref=f6e176] [cursor=pointer]:
+            - /url: /career
+          - link "Investors" [ref=f6e177] [cursor=pointer]:
+            - /url: /investors
+          - link "Contact" [ref=f6e178] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=f6e179]:
+          - heading "Contact" [level=4] [ref=f6e180]
+          - link "Talk to us" [ref=f6e181] [cursor=pointer]:
+            - /url: /contact
+          - link "LinkedIn" [ref=f6e182] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/ektar-technologies/
+          - link "YouTube" [ref=f6e183] [cursor=pointer]:
+            - /url: https://www.youtube.com/@ektar-technologies
+      - generic [ref=f6e184]:
+        - generic [ref=f6e185]: © Ektar 2022–2026. All rights reserved.
+        - generic [ref=f6e186]:
+          - link "Terms of Use" [ref=f6e187] [cursor=pointer]:
+            - /url: /termsofuse
+          - text: ·
+          - link "Privacy Policy" [ref=f6e188] [cursor=pointer]:
+            - /url: /privacy-policy
+      - generic [ref=f6e189]:
+        - generic [ref=f6e190]:
+          - heading "Singapore" [level=5] [ref=f6e191]
+          - img "Ektar Singapore office" [ref=f6e192]
+          - paragraph [ref=f6e193]: "18 Boon Lay Way #05-95 Tradehub 21, Singapore 609966"
+        - generic [ref=f6e194]:
+          - heading "UAE" [level=5] [ref=f6e195]
+          - img "Ektar UAE office" [ref=f6e196]
+          - paragraph [ref=f6e197]: Ektar Technologies LLC, 606, Latifa Towers, Near World Trade Center, Dubai, UAE
+        - generic [ref=f6e198]:
+          - heading "India" [level=5] [ref=f6e199]
+          - img "Ektar India office" [ref=f6e200]
+          - paragraph [ref=f6e201]: "Rattha Tek Meadows, Ground Floor, Tower A, No: 51, Rajiv Gandhi Salai, Sholinganallur, Chennai, Tamil Nadu 600119, India"

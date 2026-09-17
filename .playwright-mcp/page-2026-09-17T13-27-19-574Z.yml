@@ -1,0 +1,146 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - link "Ektar home" [ref=f1e3] [cursor=pointer]:
+      - /url: /
+      - img "Ektar" [ref=f1e4]
+    - navigation [ref=f1e5]:
+      - link "Home" [ref=f1e7] [cursor=pointer]:
+        - /url: /
+      - link "Protect the User" [ref=f1e9] [cursor=pointer]:
+        - /url: /protect-the-user
+      - link "Protect the Device" [ref=f1e11] [cursor=pointer]:
+        - /url: /protect-the-device
+      - link "Protect the App" [ref=f1e13] [cursor=pointer]:
+        - /url: /protect-the-app
+      - link "About" [ref=f1e15] [cursor=pointer]:
+        - /url: /about
+    - button "Toggle theme" [ref=f1e16] [cursor=pointer]
+    - link "Book a demo" [ref=f1e19] [cursor=pointer]:
+      - /url: /contact
+  - generic [ref=f1e20]:
+    - generic [ref=f1e22]: Seven products
+    - generic [ref=f1e24]: One decision engine — ekRules weighs every signal the three surfaces emit.
+  - generic [ref=f1e25]:
+    - generic [ref=f1e29]:
+      - generic [ref=f1e30]:
+        - paragraph [ref=f1e31]: ekKey · Protect the User
+        - heading "Login without a password — or a code — at all" [level=1] [ref=f1e33]:
+          - generic [ref=f1e34]: Login without a password
+          - generic [ref=f1e35]:
+            - text: — or a code —
+            - emphasis [ref=f1e36]: at all
+        - paragraph [ref=f1e37]: ekKey replaces passwords and one-time codes with a passkey tied to the customer's own device — the same industry standard already used by major banks and tech platforms worldwide.
+        - link "Book a demo" [ref=f1e39] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f1e45]:
+        - generic [ref=f1e46]: 09:41
+        - generic [ref=f1e52]:
+          - generic [ref=f1e53]:
+            - paragraph [ref=f1e54]: This device
+            - paragraph [ref=f1e58]: Passkey active · signs in instantly
+          - generic [ref=f1e59]:
+            - paragraph [ref=f1e60]: Copied to another device
+            - paragraph [ref=f1e65]: Rejected · not the enrolled hardware
+          - generic [ref=f1e66]:
+            - paragraph [ref=f1e67]: Device-bound by design
+            - paragraph [ref=f1e72]: A stolen passkey file is worthless
+    - generic [ref=f1e73]:
+      - generic [ref=f1e74]:
+        - generic [ref=f1e75]: Capabilities
+        - heading "A credential that can't be stolen, because it never travels" [level=2] [ref=f1e76]
+        - generic [ref=f1e77]:
+          - generic [ref=f1e78]:
+            - paragraph [ref=f1e83]: No password to steal
+            - paragraph [ref=f1e84]: There's nothing to phish, guess, or leak in a data breach — the credential never leaves the customer's device.
+          - generic [ref=f1e85]:
+            - paragraph [ref=f1e89]: Built on FIDO2, not a proprietary standard
+            - paragraph [ref=f1e90]: Works with passkey infrastructure customers may already use elsewhere.
+          - generic [ref=f1e91]:
+            - paragraph [ref=f1e95]: One tap to log in
+            - paragraph [ref=f1e96]: Face or fingerprint unlock replaces typing anything at all.
+          - generic [ref=f1e97]:
+            - paragraph [ref=f1e101]: Fully device-bound
+            - paragraph [ref=f1e102]: A passkey copied off the device is useless — it only works on the hardware it was created on.
+      - generic [ref=f1e103]:
+        - generic [ref=f1e104]: How it works
+        - heading "Three steps, and nothing to type" [level=2] [ref=f1e105]
+        - generic [ref=f1e106]:
+          - paragraph [ref=f1e109]:
+            - strong [ref=f1e110]: "01."
+            - text: The customer's phone generates a unique cryptographic key pair on enrollment.
+          - paragraph [ref=f1e113]:
+            - strong [ref=f1e114]: "02."
+            - text: The private key never leaves the device's secure hardware.
+          - paragraph [ref=f1e117]:
+            - strong [ref=f1e118]: "03."
+            - text: Each login is signed with that key and verified instantly — no code to type, nothing to intercept.
+      - generic [ref=f1e119]:
+        - generic [ref=f1e120]: Why now
+        - heading "Written into the new rules" [level=2] [ref=f1e121]
+        - paragraph [ref=f1e125]: Directly satisfies the passkey and device-bound login requirements now appearing in UAE, Saudi, and Malaysian banking regulation.
+    - generic [ref=f1e127]:
+      - heading "Ready to remove the password entirely?" [level=3] [ref=f1e128]
+      - link "Book a demo" [ref=f1e130] [cursor=pointer]:
+        - /url: /contact
+  - contentinfo [ref=f1e131]:
+    - generic [ref=f1e132]:
+      - generic [ref=f1e133]:
+        - generic [ref=f1e134]:
+          - heading "Products" [level=4] [ref=f1e135]
+          - link "ekShield" [ref=f1e136] [cursor=pointer]:
+            - /url: /ekshield
+          - link "ekProtect" [ref=f1e137] [cursor=pointer]:
+            - /url: /ekprotect
+          - link "ekBind" [ref=f1e138] [cursor=pointer]:
+            - /url: /ekbind
+          - link "ekSign" [ref=f1e139] [cursor=pointer]:
+            - /url: /eksign
+          - link "ekSell" [ref=f1e140] [cursor=pointer]:
+            - /url: /eksell
+          - link "ekKey" [ref=f1e141] [cursor=pointer]:
+            - /url: /ekkey
+          - link "ekPulse" [ref=f1e142] [cursor=pointer]:
+            - /url: /ekpulse
+          - link "ekRules" [ref=f1e143] [cursor=pointer]:
+            - /url: /ekrules
+        - generic [ref=f1e144]:
+          - heading "Company" [level=4] [ref=f1e145]
+          - link "About us" [ref=f1e146] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=f1e147] [cursor=pointer]:
+            - /url: /blog
+          - link "Careers" [ref=f1e148] [cursor=pointer]:
+            - /url: /career
+          - link "Investors" [ref=f1e149] [cursor=pointer]:
+            - /url: /investors
+          - link "Contact" [ref=f1e150] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=f1e151]:
+          - heading "Contact" [level=4] [ref=f1e152]
+          - link "Talk to us" [ref=f1e153] [cursor=pointer]:
+            - /url: /contact
+          - link "LinkedIn" [ref=f1e154] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/ektar-technologies/
+          - link "YouTube" [ref=f1e155] [cursor=pointer]:
+            - /url: https://www.youtube.com/@ektar-technologies
+      - generic [ref=f1e156]:
+        - generic [ref=f1e157]: © Ektar 2022–2026. All rights reserved.
+        - generic [ref=f1e158]:
+          - link "Terms of Use" [ref=f1e159] [cursor=pointer]:
+            - /url: /termsofuse
+          - text: ·
+          - link "Privacy Policy" [ref=f1e160] [cursor=pointer]:
+            - /url: /privacy-policy
+      - generic [ref=f1e161]:
+        - generic [ref=f1e162]:
+          - heading "Singapore" [level=5] [ref=f1e163]
+          - img "Ektar Singapore office" [ref=f1e164]
+          - paragraph [ref=f1e165]: "18 Boon Lay Way #05-95 Tradehub 21, Singapore 609966"
+        - generic [ref=f1e166]:
+          - heading "UAE" [level=5] [ref=f1e167]
+          - img "Ektar UAE office" [ref=f1e168]
+          - paragraph [ref=f1e169]: Ektar Technologies LLC, 606, Latifa Towers, Near World Trade Center, Dubai, UAE
+        - generic [ref=f1e170]:
+          - heading "India" [level=5] [ref=f1e171]
+          - img "Ektar India office" [ref=f1e172]
+          - paragraph [ref=f1e173]: "Rattha Tek Meadows, Ground Floor, Tower A, No: 51, Rajiv Gandhi Salai, Sholinganallur, Chennai, Tamil Nadu 600119, India"

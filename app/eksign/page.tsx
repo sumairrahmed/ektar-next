@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ProductHero from "@/components/ProductHero";
 import LedgerBackground from "@/components/LedgerBackground";
+import SigningCompletionAnimation from "@/components/SigningCompletionAnimation";
 import { hero, ledgerRows, whyInHouse, howItWorks, whoCanSign, comparison, closing } from "@/lib/content/products/eksign";
 
 export const metadata: Metadata = {
@@ -18,49 +19,7 @@ export default function EkSignPage() {
         description={hero.description}
         backLabel="← All products"
         motif={<LedgerBackground rows={ledgerRows} />}
-        visual={
-          <div className="viz">
-            <div className="vhead">
-              <span>ekSign · execution status</span>
-              <span>2 of 3 signed</span>
-            </div>
-            <div className="vbody">
-              {[
-                { label: "Primary borrower", status: "Signed" },
-                { label: "Co-borrower", status: "Signed" },
-                { label: "Guarantor", status: "Awaiting" },
-              ].map((row) => (
-                <div className="vrow" key={row.label}>
-                  <span className="ic">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M15 2H6v20h12V7z" />
-                      <path d="M14 2v5h5" />
-                    </svg>
-                  </span>
-                  <span>
-                    <b>{row.label}</b>
-                  </span>
-                  <span className="ok">{row.status}</span>
-                </div>
-              ))}
-              <div className="vrow">
-                <span className="ic">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                    <path d="M7 10V7a5 5 0 0 1 10 0v3" />
-                    <rect x="3" y="10" width="18" height="11" />
-                  </svg>
-                </span>
-                <span>
-                  <b>Authentication</b>
-                </span>
-                <span className="ok">Bank MFA · national ID</span>
-              </div>
-            </div>
-            <div className="vnote">
-              Seal <b>SHA-256 a3f9·c2d1·e4b8</b> — any alteration after signing fails verification
-            </div>
-          </div>
-        }
+        visual={<SigningCompletionAnimation />}
       />
 
       <div className="wrap">

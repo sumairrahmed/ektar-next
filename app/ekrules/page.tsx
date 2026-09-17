@@ -45,7 +45,6 @@ export default function EkRulesPage() {
           </>
         }
         description={hero.description}
-        tierLine={hero.badge}
         visual={<RulesViz />}
       />
 

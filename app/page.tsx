@@ -2,7 +2,7 @@ import Link from "next/link";
 import HeroReel from "@/components/HeroReel";
 import HashRain from "@/components/HashRain";
 import AnnouncementStrip from "@/components/AnnouncementStrip";
-import TieredSolutionsPanel from "@/components/TieredSolutionsPanel";
+import SolutionsPanel from "@/components/SolutionsPanel";
 import SurfaceGrid from "@/components/SurfaceGrid";
 import RegulatoryTailwinds from "@/components/RegulatoryTailwinds";
 import StatBand from "@/components/StatBand";
@@ -44,9 +44,7 @@ export default function Home() {
           <span className="kicker mono">The trust suite</span>
           <h2 className="h2">{trustSuite.heading}</h2>
           <p className="lede">{trustSuite.intro}</p>
-          {trustSuite.tiers.map((t) => (
-            <TieredSolutionsPanel key={t.tier} tier={t.tier} count={t.count} products={t.products} />
-          ))}
+          <SolutionsPanel products={trustSuite.products} />
         </section>
       </div>
 

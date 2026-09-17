@@ -3,8 +3,7 @@ import Link from "next/link";
 import ProductHero from "@/components/ProductHero";
 import LedgerBackground from "@/components/LedgerBackground";
 import SimTowerViz from "@/components/SimTowerViz";
-import TierBadge from "@/components/TierBadge";
-import { hero, ledgerRows, quickFacts, howItWorks, whyNow, closing } from "@/lib/content/products/ekbind";
+import { hero, ledgerRows, howItWorks, whyNow, closing } from "@/lib/content/products/ekbind";
 
 export const metadata: Metadata = {
   title: "ekBind — SIM binding | Ektar",
@@ -20,7 +19,6 @@ export default function EkBindPage() {
         description={hero.description}
         backLabel="← All products"
         motif={<LedgerBackground rows={ledgerRows} />}
-        badge={<TierBadge label={hero.badge} />}
         visual={
           <div className="viz">
             <div className="vhead">
@@ -85,15 +83,6 @@ export default function EkBindPage() {
       />
 
       <div className="wrap">
-        <div className="strip mono">
-          {quickFacts.map((f) => (
-            <div key={f.k}>
-              <span className="k">{f.k}</span>
-              <span className="v">{f.v}</span>
-            </div>
-          ))}
-        </div>
-
         <section className="sec reveal">
           <span className="kicker mono">How binding works</span>
           <h2 className="h2">Two ways to prove the SIM. No OTP in either.</h2>

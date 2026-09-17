@@ -48,7 +48,6 @@ export default function ProtectTheUserPage() {
           </>
         }
         description={hero.description}
-        tierLine={hero.tierLine}
         visual={<HeroCycle scenes={heroScenes} variant="cycle2" />}
       />
 

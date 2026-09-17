@@ -6,7 +6,6 @@ export const hero = {
   title: "Bind the account to the SIM. Catch the swap.",
   description:
     "ekBind verifies the SIM behind every session. Silent Network Authentication confirms the SIM directly with the mobile operator over the data connection — no code, no customer action. Reverse SMS proves possession of the SIM from the device itself. Both bind the account to a known SIM, so a swapped SIM or a moved number is caught before a transaction proceeds.",
-  badge: "Shipping 2026",
 };
 
 export const ledgerRows: LedgerRow[] = [
@@ -24,12 +23,6 @@ export const ledgerRows: LedgerRow[] = [
   { a: "+968 •• ••• 1188", b: "sim 7b21" },
   { a: "+966 •• ••• 9503", b: "sim e5c9" },
   { a: "+971 •• ••• 2874", b: "sim 88d0" },
-];
-
-export const quickFacts = [
-  { k: "Methods", v: "SNA · Reverse SMS" },
-  { k: "Catches", v: "SIM swap · port-out · device change" },
-  { k: "Customer action", v: "None, with SNA" },
 ];
 
 export const howItWorks = [

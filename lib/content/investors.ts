@@ -15,7 +15,7 @@ export const whyNow = {
 
 export const team = {
   heading: "Three ex-bankers, decades inside the institutions we now serve",
-  text: "Our founders spent a combined 78+ years in senior roles at Standard Chartered Bank, across consumer banking, technology, and product leadership. Our advisory board includes former senior executives from Emirates NBD, Standard Chartered, and experienced venture investors.",
+  text: "Our founders bring ~100 years of combined leadership in global banking and financial services, across consumer banking, technology, and product leadership. Our advisory board includes former senior executives from Emirates NBD, Standard Chartered, and experienced venture investors.",
 };
 
 export const closing = {

@@ -8,7 +8,6 @@ export const hero = {
   titleEmphasis: "We close that door.",
   description:
     "Fraud rarely breaks through a bank's systems — it goes around them, through a phished login, a stolen code, or a convincing fake. These products make the person themselves the hardest part to fool.",
-  tierLine: "ekShield — live today · ekKey, ekSign — shipping through 2026 · ekPulse — building now",
 };
 
 export const heroScenes: CycleScene[] = [
@@ -37,7 +36,7 @@ export const heroScenes: CycleScene[] = [
 export const threats = {
   heading: "Four ways fraud targets the person, not the system",
   items: [
-    { name: "Stolen text-message codes", detail: "The most exploited method in retail banking today.", tag: "Now banned across five markets" },
+    { name: "Stolen SMS OTP", detail: "The most exploited method in retail banking today.", tag: "Now banned across five markets" },
     { name: "Phishing and fake login pages", detail: "Designed to look identical to the real thing.", tag: "Credential capture" },
     { name: "Call-centre social engineering", detail: "A convincing voice, not a broken system.", tag: "Human channel" },
     { name: "Deepfakes and synthetic identities", detail: "AI-generated voices and faces, up over 12x in the past year.", tag: "Fastest-growing vector" },
