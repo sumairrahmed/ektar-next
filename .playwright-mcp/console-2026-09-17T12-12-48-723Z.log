@@ -1,0 +1,7 @@
+[     732ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:63106/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    1056ms] [WARNING] Image with src "/ektar-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:63106/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    1132ms] [LOG] [HMR] connected @ http://localhost:63106/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    2994ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:63106/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    3050ms] [LOG] [Fast Refresh] done in 157ms @ http://localhost:63106/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   12992ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:63106/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   13012ms] [LOG] [Fast Refresh] done in 124ms @ http://localhost:63106/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297

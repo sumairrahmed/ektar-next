@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import ProductHero from "@/components/ProductHero";
 import PhoneApprovalFlow from "@/components/PhoneApprovalFlow";
@@ -37,7 +38,7 @@ export default function EkShieldPage() {
       />
 
       <div className="wrap">
-        <div className="strip" style={{ gridTemplateColumns: "repeat(2, minmax(0,1fr))" }}>
+        <div className="strip" style={{ "--strip-cols": "repeat(2, minmax(0,1fr))" } as CSSProperties}>
           {proofLine.map((f) => (
             <div key={f.k}>
               <span className="k mono">{f.k}</span>

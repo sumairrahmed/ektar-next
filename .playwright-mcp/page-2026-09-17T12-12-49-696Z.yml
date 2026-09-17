@@ -1,0 +1,188 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Ektar home" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Ektar" [ref=e4]
+    - generic [ref=e5]: Since 2022
+    - navigation [ref=e7]:
+      - link "Home" [ref=e9] [cursor=pointer]:
+        - /url: /
+      - link "Protect the User" [ref=e11] [cursor=pointer]:
+        - /url: /protect-the-user
+      - link "Protect the Device" [ref=e13] [cursor=pointer]:
+        - /url: /protect-the-device
+      - link "Protect the App" [ref=e15] [cursor=pointer]:
+        - /url: /protect-the-app
+      - link "About" [ref=e17] [cursor=pointer]:
+        - /url: /about
+    - button "Toggle theme" [ref=e18] [cursor=pointer]
+    - link "Book a demo" [ref=e21] [cursor=pointer]:
+      - /url: /contact
+  - generic [ref=e22]:
+    - generic [ref=e24]: Seven products
+    - generic [ref=e26]: One decision engine — ekRules weighs every signal the three surfaces emit.
+  - generic [ref=e27]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - paragraph [ref=e33]: Our story — Dubai · Singapore · Chennai
+        - heading "We think like bankers. We build like technologists." [level=1] [ref=e35]
+        - paragraph [ref=e36]: Ektar was founded in 2022 by three experienced ex-bankers. We build digital security solutions for banking's digital channels — and we have lived inside the institutions we now serve, which means we understand the operational constraints, compliance requirements, and procurement realities that shape how banks actually adopt technology.
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]: Ektar · at a glance
+          - generic [ref=e40]: Since 2022
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e46]: Founded
+            - generic [ref=e47]: "2022"
+          - generic [ref=e48]:
+            - generic [ref=e52]: Founders
+            - generic [ref=e53]: 3 ex-bankers
+          - generic [ref=e54]:
+            - generic [ref=e59]: Markets
+            - generic [ref=e60]: GCC · South Asia · SEA
+          - generic [ref=e61]:
+            - generic [ref=e66]: Offices
+            - generic [ref=e67]: Dubai · Singapore · Chennai
+        - generic [ref=e68]: Standard Chartered leadership backgrounds — we have run the channels we now secure
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - generic [ref=e72]: Founded
+          - generic [ref=e73]: "2022"
+        - generic [ref=e74]:
+          - generic [ref=e75]: Founders
+          - generic [ref=e76]: 3 ex-bankers, Standard Chartered
+        - generic [ref=e77]:
+          - generic [ref=e78]: Offices
+          - generic [ref=e79]: Dubai · Singapore · Chennai
+      - generic [ref=e80]:
+        - generic [ref=e81]: Vision & mission
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - heading "Our Vision" [level=3] [ref=e84]
+            - paragraph [ref=e85]: To make banking safer, smarter, and more trustworthy — for every bank, every channel, and every customer — until trust is no longer something people hope for, but something they simply expect from the banks they rely on each and every day.
+          - generic [ref=e86]:
+            - heading "Our Mission" [level=3] [ref=e87]
+            - paragraph [ref=e88]: We build digital security products that close the three layers of vulnerability in banking's digital channels — protecting every device, every app, and every user interaction — so banks can serve their customers with confidence.
+      - generic [ref=e89]:
+        - generic [ref=e90]: Our founders
+        - heading "Three ex-bankers who lived the problem." [level=2] [ref=e91]
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - img "Sandeep Bose" [ref=e94]
+            - heading "Sandeep Bose" [level=4] [ref=e95]
+            - paragraph [ref=e96]: Co-Founder and CEO
+            - paragraph [ref=e97]: "29 years at Standard Chartered Bank in Consumer Banking Leadership roles. Last role: Regional Head of Personal and Business Banking for Africa, Middle East and Europe. Board Member at Bahrain Development Bank and Advisor at Foundation Holdings."
+          - generic [ref=e98]:
+            - img "Ramanathan Mullainathan" [ref=e99]
+            - heading "Ramanathan Mullainathan" [level=4] [ref=e100]
+            - paragraph [ref=e101]: Co-Founder and CTO
+            - paragraph [ref=e102]: "23 years of IT leadership experience consulting global banks — Standard Chartered, JPMC, Fidelity, State Street, Bear Stearns. Most recent role: Global Head, Technologies for Retail, Private & Business Banking Channels at Standard Chartered."
+          - generic [ref=e103]:
+            - img "Sethu Ramaswamy" [ref=e104]
+            - heading "Sethu Ramaswamy" [level=4] [ref=e105]
+            - paragraph [ref=e106]: Co-founder and CPO
+            - paragraph [ref=e107]: "26 years with Standard Chartered Bank in Consumer Banking Leadership roles, with deep expertise in Product Management and Credit Cards/Payments. Last role: Regional Head of Affluent Banking for Africa, Middle East & Europe."
+      - generic [ref=e108]:
+        - generic [ref=e109]: Advisory board
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - img "A. D. Ganesh" [ref=e112]
+            - heading "A. D. Ganesh" [level=4] [ref=e113]
+            - paragraph [ref=e114]: Founder & CEO, Quantum Consultants FZ LLC
+            - paragraph [ref=e115]: 26 years of banking experience across India, Middle East, Sub-Saharan Africa and Europe. Formerly Managing Director and Regional Head of Commercial Banking, Africa and Middle East, at Standard Chartered Bank.
+          - generic [ref=e116]:
+            - img "Andrew Bainbridge" [ref=e117]
+            - heading "Andrew Bainbridge" [level=4] [ref=e118]
+            - paragraph [ref=e119]: Chair, Private Infrastructure Development Group
+            - paragraph [ref=e120]: Extensive experience in commercial banking, risk management, infrastructure financing, business strategy, and acquisitions and disposals across emerging and developed markets.
+          - generic [ref=e121]:
+            - img "Suvo Sarkar" [ref=e122]
+            - heading "Suvo Sarkar" [level=4] [ref=e123]
+            - paragraph [ref=e124]: Founder & CEO, 3D Advisory
+            - paragraph [ref=e125]: Over 36 years of experience across Asia and the Middle East. Formerly Senior Executive Vice President and Group Head of Retail Banking and Wealth Management at Emirates NBD.
+          - generic [ref=e126]:
+            - img "Vignesh Ramanujam" [ref=e127]
+            - heading "Vignesh Ramanujam" [level=4] [ref=e128]
+            - paragraph [ref=e129]: CEO, second venture
+            - paragraph [ref=e130]: Previously a Partner at Lok Capital, overseeing investments in over 40 companies. Has personally supported over 50 startups globally, spanning technology investing, fundraising, and early-stage strategy.
+      - generic [ref=e131]:
+        - generic [ref=e132]: Beyond banking
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - heading "Interested in joining us?" [level=3] [ref=e135]
+            - paragraph [ref=e136]:
+              - link "→ Careers" [ref=e137] [cursor=pointer]:
+                - /url: /career
+          - generic [ref=e138]:
+            - heading "Interested in investing in Ektar?" [level=3] [ref=e139]
+            - paragraph [ref=e140]:
+              - link "→ Get in touch" [ref=e141] [cursor=pointer]:
+                - /url: /investors
+    - generic [ref=e143]:
+      - heading "Built by bankers, for bankers." [level=3] [ref=e144]
+      - link "Book a demo" [ref=e146] [cursor=pointer]:
+        - /url: /contact
+  - contentinfo [ref=e147]:
+    - generic [ref=e148]:
+      - generic [ref=e149]:
+        - generic [ref=e150]:
+          - heading "Products" [level=4] [ref=e151]
+          - link "ekShield" [ref=e152] [cursor=pointer]:
+            - /url: /ekshield
+          - link "ekProtect" [ref=e153] [cursor=pointer]:
+            - /url: /ekprotect
+          - link "ekBind" [ref=e154] [cursor=pointer]:
+            - /url: /ekbind
+          - link "ekSign" [ref=e155] [cursor=pointer]:
+            - /url: /eksign
+          - link "ekSell" [ref=e156] [cursor=pointer]:
+            - /url: /eksell
+          - link "ekKey" [ref=e157] [cursor=pointer]:
+            - /url: /ekkey
+          - link "ekPulse" [ref=e158] [cursor=pointer]:
+            - /url: /ekpulse
+          - link "ekRules" [ref=e159] [cursor=pointer]:
+            - /url: /ekrules
+        - generic [ref=e160]:
+          - heading "Company" [level=4] [ref=e161]
+          - link "About us" [ref=e162] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=e163] [cursor=pointer]:
+            - /url: /blog
+          - link "Careers" [ref=e164] [cursor=pointer]:
+            - /url: /career
+          - link "Investors" [ref=e165] [cursor=pointer]:
+            - /url: /investors
+          - link "Contact" [ref=e166] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e167]:
+          - heading "Contact" [level=4] [ref=e168]
+          - link "Talk to us" [ref=e169] [cursor=pointer]:
+            - /url: /contact
+          - link "LinkedIn" [ref=e170] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/ektar-technologies/
+          - link "YouTube" [ref=e171] [cursor=pointer]:
+            - /url: https://www.youtube.com/@ektar-technologies
+      - generic [ref=e172]:
+        - generic [ref=e173]: © Ektar 2022–2026. All rights reserved.
+        - generic [ref=e174]:
+          - link "Terms of Use" [ref=e175] [cursor=pointer]:
+            - /url: /termsofuse
+          - text: ·
+          - link "Privacy Policy" [ref=e176] [cursor=pointer]:
+            - /url: /privacy-policy
+      - generic [ref=e177]:
+        - generic [ref=e178]:
+          - heading "Singapore" [level=5] [ref=e179]
+          - img "Ektar Singapore office" [ref=e180]
+          - paragraph [ref=e181]: "18 Boon Lay Way #05-95 Tradehub 21, Singapore 609966"
+        - generic [ref=e182]:
+          - heading "UAE" [level=5] [ref=e183]
+          - img "Ektar UAE office" [ref=e184]
+          - paragraph [ref=e185]: Ektar Technologies LLC, 606, Latifa Towers, Near World Trade Center, Dubai, UAE
+        - generic [ref=e186]:
+          - heading "India" [level=5] [ref=e187]
+          - img "Ektar India office" [ref=e188]
+          - paragraph [ref=e189]: "Rattha Tek Meadows, Ground Floor, Tower A, No: 51, Rajiv Gandhi Salai, Sholinganallur, Chennai, Tamil Nadu 600119, India"

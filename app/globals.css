@@ -596,7 +596,7 @@ textarea.input { min-height: 110px; resize: vertical; }
 /* ══════════════════════════════════════════════════════════════════════════
    11. Proof strip, attack surface, layers, signal (DESIGN.md §5.5–5.7)
    ══════════════════════════════════════════════════════════════════════ */
-.strip { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); border-bottom: 2px solid var(--line); }
+.strip { display: grid; grid-template-columns: var(--strip-cols, repeat(3, minmax(0,1fr))); border-bottom: 2px solid var(--line); }
 .strip div { padding: calc(1.1 * var(--leading)) clamp(18px,2.2vw,32px); border-left: 2px solid var(--line); }
 .strip div:first-child { border-left: 0; padding-left: 0; }
 .strip .k { display: block; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-lt); margin-bottom: 9px; }
@@ -889,6 +889,12 @@ textarea.input { min-height: 110px; resize: vertical; }
   .posts { grid-template-columns: 1fr; }
   .layout { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
+}
+/* .pgrid:not(.pgrid-4) above has higher specificity than the plain .pgrid
+   selector at 640px (globals.css line 847), so without this it wins even on
+   narrow phones and keeps founders/advisors stuck at 2 columns. */
+@media (max-width: 640px) {
+  .pgrid:not(.pgrid-4) { grid-template-columns: minmax(0,1fr); }
 }
 
 /* Blog — single post */

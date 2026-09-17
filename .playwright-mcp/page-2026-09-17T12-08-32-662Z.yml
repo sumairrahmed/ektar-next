@@ -1,0 +1,264 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - link "Ektar home" [ref=f1e3] [cursor=pointer]:
+      - /url: /
+      - img "Ektar" [ref=f1e4]
+    - button "Toggle theme" [ref=f1e5] [cursor=pointer]
+    - link "Book a demo" [ref=f1e8] [cursor=pointer]:
+      - /url: /contact
+    - button "Open menu" [ref=f1e9] [cursor=pointer]
+    - navigation [ref=f1e12]:
+      - link "Home" [ref=f1e14] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f1e15]:
+        - link "Protect the User" [ref=f1e16] [cursor=pointer]:
+          - /url: /protect-the-user
+        - link "ekShield" [ref=f1e17] [cursor=pointer]:
+          - /url: /ekshield
+        - link "ekKey" [ref=f1e18] [cursor=pointer]:
+          - /url: /ekkey
+        - link "ekSign" [ref=f1e19] [cursor=pointer]:
+          - /url: /eksign
+        - link "ekPulse" [ref=f1e20] [cursor=pointer]:
+          - /url: /ekpulse
+      - generic [ref=f1e21]:
+        - link "Protect the Device" [ref=f1e22] [cursor=pointer]:
+          - /url: /protect-the-device
+        - link "ekBind" [ref=f1e23] [cursor=pointer]:
+          - /url: /ekbind
+        - link "ekProtect" [ref=f1e24] [cursor=pointer]:
+          - /url: /ekprotect
+        - link "ekShield" [ref=f1e25] [cursor=pointer]:
+          - /url: /ekshield
+      - generic [ref=f1e26]:
+        - link "Protect the App" [ref=f1e27] [cursor=pointer]:
+          - /url: /protect-the-app
+        - link "ekProtect" [ref=f1e28] [cursor=pointer]:
+          - /url: /ekprotect
+        - link "ekPulse" [ref=f1e29] [cursor=pointer]:
+          - /url: /ekpulse
+      - link "About" [ref=f1e31] [cursor=pointer]:
+        - /url: /about
+      - link "Book a demo" [ref=f1e32] [cursor=pointer]:
+        - /url: /contact
+  - generic [ref=f1e33]:
+    - generic [ref=f1e37]:
+      - generic [ref=f1e38]:
+        - paragraph [ref=f1e39]: ekShield · Protect the User
+        - heading "Kill SMS OTP. Keep the login." [level=1] [ref=f1e41]
+        - paragraph [ref=f1e42]: No code to steal, no code to intercept. ekShield binds every login and transaction to the customer's own device — phishing-resistant, compliant with CBUAE, RBI, SAMA, BSP and MAS, and already live across mobile, web, call centre and 3DS at the UAE's 3rd largest bank.
+        - generic [ref=f1e43]:
+          - link "Book a demo" [ref=f1e44] [cursor=pointer]:
+            - /url: /contact
+          - link "← All layers" [ref=f1e45] [cursor=pointer]:
+            - /url: /
+      - generic [ref=f1e51]:
+        - generic [ref=f1e52]: Secure session
+        - generic [ref=f1e58]:
+          - generic [ref=f1e59]:
+            - generic:
+              - paragraph: Ektar Bank · locked
+              - paragraph: 09:41
+              - generic:
+                - generic:
+                  - generic: Approve transfer
+                  - generic: AED 42,500 to Al Futtaim Trading LLC — tap to review
+              - paragraph: Push · signed challenge delivered
+            - generic:
+              - paragraph: Transfer request
+              - paragraph: AED 42,500.00
+              - generic:
+                - generic: To
+                - generic: Al Futtaim Trading LLC
+              - generic:
+                - generic: Account
+                - generic: AE07 ···· 4412
+              - generic:
+                - generic: Channel
+                - generic: Mobile banking
+              - generic: Hold to approve
+            - generic:
+              - paragraph: Biometric check
+              - paragraph: Matching device-bound passkey…
+            - generic:
+              - paragraph: Authentication · ekShield
+              - paragraph: Transfer approved
+              - generic:
+                - generic:
+                  - text: Device-bound passkey
+                  - generic: Verified · no OTP sent
+              - generic:
+                - generic: Amount
+                - generic: AED 42,500.00
+              - generic:
+                - generic: Reference
+                - generic: TRF·88301
+              - paragraph: ECDSA P-256 · sig 3f9a·c2e1
+          - generic [ref=f1e60]:
+            - generic [ref=f1e61]:
+              - generic [ref=f1e63]: SMS OTP replay attempt
+              - generic [ref=f1e64]: blocked
+            - generic [ref=f1e65]:
+              - generic [ref=f1e67]: Phishing proxy login
+              - generic [ref=f1e68]: blocked
+            - generic [ref=f1e69]:
+              - generic [ref=f1e71]: Unbound device
+              - generic [ref=f1e72]: denied
+    - generic [ref=f1e73]:
+      - generic [ref=f1e74]:
+        - generic [ref=f1e75]:
+          - generic [ref=f1e76]: Live
+          - generic [ref=f1e77]: Securing logins at two tier-1 banks in the UAE
+        - generic [ref=f1e78]:
+          - generic [ref=f1e79]: Contracted
+          - generic [ref=f1e80]: Deployment underway at a top-3 Omani bank
+      - generic [ref=f1e81]:
+        - generic [ref=f1e82]: The business case
+        - heading "Three reasons banks make the switch" [level=2] [ref=f1e83]
+        - generic [ref=f1e84]:
+          - generic [ref=f1e85]:
+            - paragraph [ref=f1e86]: "01"
+            - paragraph [ref=f1e87]: Reduce risk. Closes the phishing, SIM-swap, and replay gaps that SMS OTP can't.
+          - generic [ref=f1e88]:
+            - paragraph [ref=f1e89]: "02"
+            - paragraph [ref=f1e90]: Save cost. Removes the per-message fee banks pay telecom operators on every SMS OTP, multiplied across millions of logins a month.
+          - generic [ref=f1e91]:
+            - paragraph [ref=f1e92]: "03"
+            - paragraph [ref=f1e93]: Improve customer experience. One tap on a trusted device, replacing a code that's slow, easy to mistype, and frustrating to wait for.
+      - generic [ref=f1e95]:
+        - generic [ref=f1e96]: The breaking point
+        - heading "SMS OTP is the weakest link in digital banking" [level=2] [ref=f1e97]
+        - paragraph [ref=f1e98]: Six digits, no binding, no encryption — and every way of stealing them already works at scale.
+        - generic [ref=f1e99]:
+          - paragraph [ref=f1e102]:
+            - strong [ref=f1e103]: Account takeover.
+            - text: SIM swap, SS7 exploits and overlay malware intercept the code before it reaches the customer.
+          - paragraph [ref=f1e106]:
+            - strong [ref=f1e107]: Real-time phishing.
+            - text: A code read aloud or typed into a fake screen reaches the attacker as fast as the customer.
+          - paragraph [ref=f1e110]:
+            - strong [ref=f1e111]: Zero transaction binding.
+            - text: One code approves any amount, to anyone — no link to what it authorized.
+          - paragraph [ref=f1e114]:
+            - strong [ref=f1e115]: Regulatory bans.
+            - text: CBUAE, SAMA, RBI, MAS and BSP have already outlawed it for high-risk transactions.
+          - paragraph [ref=f1e118]:
+            - strong [ref=f1e119]: Approval fatigue.
+            - text: Look-alike prompts with no number matching train customers to tap "approve" on anything.
+          - paragraph [ref=f1e122]:
+            - strong [ref=f1e123]: Delivery & cost.
+            - text: Carrier delays, dead zones and rising per-SMS fees erode trust and margin alike.
+      - generic [ref=f1e124]:
+        - generic [ref=f1e125]: Capabilities
+        - heading "Everything ekShield does" [level=2] [ref=f1e126]
+        - generic [ref=f1e127]:
+          - generic [ref=f1e128]:
+            - paragraph [ref=f1e129]: "01"
+            - paragraph [ref=f1e130]: Stays inside your own infrastructure. Every credential, key, and log lives on the bank's own servers — never on Ektar's.
+          - generic [ref=f1e131]:
+            - paragraph [ref=f1e132]: "02"
+            - paragraph [ref=f1e133]: Extra checks trigger automatically. Step-up verification is driven directly by the bank's own fraud-risk score, not a fixed rule.
+          - generic [ref=f1e134]:
+            - paragraph [ref=f1e135]: "03"
+            - paragraph [ref=f1e136]: Works everywhere. Mobile, web, ATM, cards, contact centre, and messaging — across Retail, Corporate, and SME — all on one platform.
+          - generic [ref=f1e137]:
+            - paragraph [ref=f1e138]: "04"
+            - paragraph [ref=f1e139]: Number matching. Addresses approval fatigue by requiring the customer to match a number, not just tap approve.
+          - generic [ref=f1e140]:
+            - paragraph [ref=f1e141]: "05"
+            - paragraph [ref=f1e142]: Fully offline-capable, with silent registration and automatic key rotation running in the background.
+          - generic [ref=f1e143]:
+            - paragraph [ref=f1e144]: "06"
+            - paragraph [ref=f1e145]: Card-not-present coverage, scheme-agnostic across Visa, Mastercard, and domestic schemes.
+          - generic [ref=f1e146]:
+            - paragraph [ref=f1e147]: "07"
+            - paragraph [ref=f1e148]: Standalone white-label authenticator app, in addition to an embedded SDK.
+          - generic [ref=f1e149]:
+            - paragraph [ref=f1e150]: "08"
+            - paragraph [ref=f1e151]: Pull-based recovery — customers can view and act on any missed approval, right inside the app.
+      - generic [ref=f1e152]:
+        - generic [ref=f1e153]: How it works
+        - heading "The mechanism behind it" [level=2] [ref=f1e154]
+        - generic [ref=f1e155]:
+          - generic [ref=f1e156]:
+            - paragraph [ref=f1e157]: "01"
+            - paragraph [ref=f1e158]: On enrollment, the phone generates a rotating credential inside its own secure hardware chip.
+          - generic [ref=f1e159]:
+            - paragraph [ref=f1e160]: "02"
+            - paragraph [ref=f1e161]: Every login or approval is signed with that credential and expires the instant it's used — nothing can be captured and replayed.
+          - generic [ref=f1e162]:
+            - paragraph [ref=f1e163]: "03"
+            - paragraph [ref=f1e164]: Each approval is bound to the exact transaction it authorizes, so a stolen approval can't be reused for a different payment.
+      - generic [ref=f1e165]:
+        - generic [ref=f1e166]: Why now
+        - heading "Regulators are banning the old way of proving it's you — and fraud losses are mounting." [level=2] [ref=f1e167]
+        - paragraph [ref=f1e171]:
+          - strong [ref=f1e172]: UAE (CBUAE), Saudi Arabia (SAMA), India (RBI), Singapore (MAS), and the Philippines (BSP)
+          - text: have all banned or are phasing out SMS one-time codes as a standalone authentication method.
+    - generic [ref=f1e174]:
+      - heading "Ready to retire SMS OTP?" [level=3] [ref=f1e175]
+      - paragraph [ref=f1e176]: Join the banks already live on device-bound MFA — watch ekShield stop a phishing attempt and approve a real transaction, in the same 20-minute walkthrough.
+      - link "Book a demo" [ref=f1e178] [cursor=pointer]:
+        - /url: /contact
+  - contentinfo [ref=f1e179]:
+    - generic [ref=f1e180]:
+      - generic [ref=f1e181]:
+        - generic [ref=f1e182]:
+          - heading "Products" [level=4] [ref=f1e183]
+          - link "ekShield" [ref=f1e184] [cursor=pointer]:
+            - /url: /ekshield
+          - link "ekProtect" [ref=f1e185] [cursor=pointer]:
+            - /url: /ekprotect
+          - link "ekBind" [ref=f1e186] [cursor=pointer]:
+            - /url: /ekbind
+          - link "ekSign" [ref=f1e187] [cursor=pointer]:
+            - /url: /eksign
+          - link "ekSell" [ref=f1e188] [cursor=pointer]:
+            - /url: /eksell
+          - link "ekKey" [ref=f1e189] [cursor=pointer]:
+            - /url: /ekkey
+          - link "ekPulse" [ref=f1e190] [cursor=pointer]:
+            - /url: /ekpulse
+          - link "ekRules" [ref=f1e191] [cursor=pointer]:
+            - /url: /ekrules
+        - generic [ref=f1e192]:
+          - heading "Company" [level=4] [ref=f1e193]
+          - link "About us" [ref=f1e194] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=f1e195] [cursor=pointer]:
+            - /url: /blog
+          - link "Careers" [ref=f1e196] [cursor=pointer]:
+            - /url: /career
+          - link "Investors" [ref=f1e197] [cursor=pointer]:
+            - /url: /investors
+          - link "Contact" [ref=f1e198] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=f1e199]:
+          - heading "Contact" [level=4] [ref=f1e200]
+          - link "Talk to us" [ref=f1e201] [cursor=pointer]:
+            - /url: /contact
+          - link "LinkedIn" [ref=f1e202] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/ektar-technologies/
+          - link "YouTube" [ref=f1e203] [cursor=pointer]:
+            - /url: https://www.youtube.com/@ektar-technologies
+      - generic [ref=f1e204]:
+        - generic [ref=f1e205]: © Ektar 2022–2026. All rights reserved.
+        - generic [ref=f1e206]:
+          - link "Terms of Use" [ref=f1e207] [cursor=pointer]:
+            - /url: /termsofuse
+          - text: ·
+          - link "Privacy Policy" [ref=f1e208] [cursor=pointer]:
+            - /url: /privacy-policy
+      - generic [ref=f1e209]:
+        - generic [ref=f1e210]:
+          - heading "Singapore" [level=5] [ref=f1e211]
+          - img "Ektar Singapore office" [ref=f1e212]
+          - paragraph [ref=f1e213]: "18 Boon Lay Way #05-95 Tradehub 21, Singapore 609966"
+        - generic [ref=f1e214]:
+          - heading "UAE" [level=5] [ref=f1e215]
+          - img "Ektar UAE office" [ref=f1e216]
+          - paragraph [ref=f1e217]: Ektar Technologies LLC, 606, Latifa Towers, Near World Trade Center, Dubai, UAE
+        - generic [ref=f1e218]:
+          - heading "India" [level=5] [ref=f1e219]
+          - img "Ektar India office" [ref=f1e220]
+          - paragraph [ref=f1e221]: "Rattha Tek Meadows, Ground Floor, Tower A, No: 51, Rajiv Gandhi Salai, Sholinganallur, Chennai, Tamil Nadu 600119, India"
