@@ -11,7 +11,7 @@ export const hero = {
 };
 
 export const proofLine = [
-  { k: "Live", v: "Securing logins at two tier-1 banks in the UAE" },
+  { k: "Live", v: "Securing logins and transactions at two tier-1 banks in the UAE" },
   { k: "Contracted", v: "Deployment underway at a top-3 Omani bank" },
 ];
 

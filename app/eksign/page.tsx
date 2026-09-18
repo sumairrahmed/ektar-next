@@ -17,7 +17,6 @@ export default function EkSignPage() {
         statusText={hero.statusText}
         title={hero.title}
         description={hero.description}
-        backLabel="← All products"
         motif={<LedgerBackground rows={ledgerRows} />}
         visual={<SigningCompletionAnimation />}
       />

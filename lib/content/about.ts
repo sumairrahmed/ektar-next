@@ -22,19 +22,19 @@ export const founders = [
   {
     name: "Sandeep Bose",
     role: "Co-Founder and CEO",
-    bio: "29 years at Standard Chartered Bank in Consumer Banking Leadership roles. Last role: Regional Head of Personal and Business Banking for Africa, Middle East and Europe. Board Member at Bahrain Development Bank and Advisor at Foundation Holdings.",
+    bio: "29 years at Standard Chartered in multiple global/regional leadership roles across Consumer and Commercial Banking. Last role: Regional Head of Personal and Business Banking, Africa/Middle East/Europe. Formerly Board Member, Bahrain Development Bank.",
     image: "/team/sandeep-bose.webp",
   },
   {
     name: "Ramanathan Mullainathan",
     role: "Co-Founder and CTO",
-    bio: "23 years of IT leadership experience consulting global banks — Standard Chartered, JPMC, Fidelity, State Street, Bear Stearns. Most recent role: Global Head, Technologies for Retail, Private & Business Banking Channels at Standard Chartered.",
+    bio: "26 years of IT leadership consulting global banks — Standard Chartered, JPMC, Fidelity, State Street. Last role: Global Head, Technologies for Retail, Private & Business Banking Channels at Standard Chartered.",
     image: "/team/ramanathan-mullainathan.webp",
   },
   {
     name: "Sethu Ramaswamy",
     role: "Co-founder and CPO",
-    bio: "26 years with Standard Chartered Bank in Consumer Banking Leadership roles, with deep expertise in Product Management and Credit Cards/Payments. Last role: Regional Head of Affluent Banking for Africa, Middle East & Europe.",
+    bio: "26 years at Standard Chartered in Consumer Banking, with deep Product & Cards/Payments expertise. Last role: Regional Head of Affluent Banking, Africa/Middle East/Europe.",
     image: "/team/sethu-ramaswamy.webp",
   },
 ];

@@ -11,6 +11,7 @@ import { THEME_INIT_SCRIPT } from "@/lib/theme";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
   variable: "--font-poppins",
   display: "swap",
 });

@@ -5,7 +5,6 @@ export default function ProductHero({
   statusText,
   title,
   description,
-  backLabel,
   motif,
   visual,
   badge,
@@ -13,7 +12,6 @@ export default function ProductHero({
   statusText: string;
   title: string;
   description: string;
-  backLabel: "← All layers" | "← All products";
   motif: ReactNode;
   visual: ReactNode;
   badge?: ReactNode;
@@ -35,9 +33,6 @@ export default function ProductHero({
             <div className="row">
               <Link href="/contact" className="btn btn-primary">
                 Book a demo
-              </Link>
-              <Link href="/" className="btn btn-ghost btn-onink">
-                {backLabel}
               </Link>
             </div>
             {badge}

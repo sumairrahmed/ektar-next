@@ -17,7 +17,6 @@ export default function EkBindPage() {
         statusText={hero.statusText}
         title={hero.title}
         description={hero.description}
-        backLabel="← All products"
         motif={<LedgerBackground rows={ledgerRows} />}
         visual={
           <div className="viz">

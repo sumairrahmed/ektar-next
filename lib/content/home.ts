@@ -116,10 +116,10 @@ export const regulatorySection = {
   // non-uniform terminology split in the client's export.
   intro: "Across the Gulf, South Asia, and Southeast Asia, SMS OTP is being banned outright — with hard deadlines.",
   rows: [
-    { market: "UAE", requirement: "Text and email codes banned. Banks must move to in-app verification and passkeys by March 2026." },
+    { market: "UAE", requirement: "SMS OTP banned. Banks must move to in-app verification and passkeys by March 2026." },
     { market: "Saudi Arabia", requirement: "Device-bound login required. Fines of up to SAR 5 million per breach." },
-    { market: "India", requirement: "Banks can no longer rely on text codes alone for high-risk transactions." },
-    { market: "Singapore & Philippines", requirement: "Text-message codes are being phased out for retail banking." },
+    { market: "India", requirement: "Banks can no longer rely on SMS OTP alone for high-risk transactions." },
+    { market: "Singapore & Philippines", requirement: "SMS OTP is being phased out for retail banking." },
   ],
 };
 

@@ -9,7 +9,7 @@ export default function RulesViz() {
       </p>
       <svg width="100%" height="190" viewBox="0 0 260 200">
         <path id="l1" d="M40,26 Q60,90 130,130" fill="none" stroke="var(--line)" strokeWidth={1.5} />
-        <path id="l2" d="M130,14 Q100,60 130,130" fill="none" stroke="var(--line)" strokeWidth={1.5} />
+        <path id="l2" d="M130,22 Q100,60 130,130" fill="none" stroke="var(--line)" strokeWidth={1.5} />
         <path id="l3" d="M220,26 Q200,90 130,130" fill="none" stroke="var(--line)" strokeWidth={1.5} />
 
         <circle r={5} fill="var(--color-accent)">
@@ -29,7 +29,7 @@ export default function RulesViz() {
         </circle>
 
         <circle cx={40} cy={22} r={15} fill="var(--ink)" stroke="var(--paper)" strokeWidth={1.5} />
-        <circle cx={130} cy={12} r={15} fill="var(--ink)" stroke="var(--paper)" strokeWidth={1.5} />
+        <circle cx={130} cy={20} r={15} fill="var(--ink)" stroke="var(--paper)" strokeWidth={1.5} />
         <circle cx={220} cy={22} r={15} fill="var(--ink)" stroke="var(--paper)" strokeWidth={1.5} />
         <text x={40} y={50} textAnchor="middle" fontSize={10.5} fill="var(--dim)">User</text>
         <text x={130} y={50} textAnchor="middle" fontSize={10.5} fill="var(--dim)">Device</text>

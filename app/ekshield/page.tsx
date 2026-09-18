@@ -28,7 +28,6 @@ export default function EkShieldPage() {
         statusText={hero.statusText}
         title={hero.title}
         description={hero.description}
-        backLabel="← All layers"
         motif={
           <div className="cipherbg" aria-hidden="true">
             <HashRain className="rain" />

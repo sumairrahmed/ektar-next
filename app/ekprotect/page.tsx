@@ -16,7 +16,6 @@ export default function EkProtectPage() {
         statusText={hero.statusText}
         title={hero.title}
         description={hero.description}
-        backLabel="← All layers"
         motif={<IntrusionGrid />}
         visual={
           <div className="viz">
