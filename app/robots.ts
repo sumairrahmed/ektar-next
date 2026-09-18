@@ -6,5 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       disallow: ["", "/cgi-bin/"],
     },
+    sitemap: "https://www.ektar.com/sitemap.xml",
   };
 }
