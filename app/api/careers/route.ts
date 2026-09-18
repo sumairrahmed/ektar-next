@@ -1,14 +1,12 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import { getMailTransporter, MAIL_FROM, MAIL_TO } from "@/lib/mailer";
 
-const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || "Ektar Website <onboarding@resend.dev>";
-const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "customer@ektar.com";
 const MAX_RESUME_BYTES = 8 * 1024 * 1024;
 
 export async function POST(req: Request) {
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    console.error("RESEND_API_KEY is not set — cannot send careers form emails.");
+  const transporter = getMailTransporter();
+  if (!transporter) {
+    console.error("SMTP credentials are not set — cannot send careers form emails.");
     return NextResponse.json({ error: "Email sending isn't configured yet. Please contact us directly." }, { status: 500 });
   }
 
@@ -29,16 +27,15 @@ export async function POST(req: Request) {
   }
 
   try {
-    const resend = new Resend(apiKey);
     const attachments = [];
     if (resume && resume.size > 0) {
       const buffer = Buffer.from(await resume.arrayBuffer());
       attachments.push({ filename: resume.name, content: buffer });
     }
 
-    const { error } = await resend.emails.send({
-      from: FROM_EMAIL,
-      to: TO_EMAIL,
+    await transporter.sendMail({
+      from: MAIL_FROM,
+      to: MAIL_TO,
       replyTo: email,
       subject: `New job application from ${name}${role ? ` — ${role}` : ""}`,
       html: `
@@ -54,10 +51,6 @@ export async function POST(req: Request) {
       `,
       attachments,
     });
-    if (error) {
-      console.error("Resend rejected the careers form email:", error);
-      return NextResponse.json({ error: "Could not send your application. Please try again later." }, { status: 502 });
-    }
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("Careers form email failed:", err);

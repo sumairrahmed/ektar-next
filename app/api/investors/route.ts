@@ -1,13 +1,10 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
-
-const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || "Ektar Website <onboarding@resend.dev>";
-const TO_EMAIL = process.env.INVESTORS_TO_EMAIL || process.env.CONTACT_TO_EMAIL || "customer@ektar.com";
+import { getMailTransporter, MAIL_FROM, INVESTORS_MAIL_TO } from "@/lib/mailer";
 
 export async function POST(req: Request) {
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    console.error("RESEND_API_KEY is not set — cannot send investor form emails.");
+  const transporter = getMailTransporter();
+  if (!transporter) {
+    console.error("SMTP credentials are not set — cannot send investor form emails.");
     return NextResponse.json({ error: "Email sending isn't configured yet. Please contact us directly." }, { status: 500 });
   }
 
@@ -19,10 +16,9 @@ export async function POST(req: Request) {
   }
 
   try {
-    const resend = new Resend(apiKey);
-    const { error } = await resend.emails.send({
-      from: FROM_EMAIL,
-      to: TO_EMAIL,
+    await transporter.sendMail({
+      from: MAIL_FROM,
+      to: INVESTORS_MAIL_TO,
       replyTo: email,
       subject: `New investor inquiry from ${name}`,
       html: `
@@ -34,10 +30,6 @@ export async function POST(req: Request) {
         <p>${escapeHtml(description).replace(/\n/g, "<br />")}</p>
       `,
     });
-    if (error) {
-      console.error("Resend rejected the investor form email:", error);
-      return NextResponse.json({ error: "Could not send your message. Please try again later." }, { status: 502 });
-    }
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("Investor form email failed:", err);
