@@ -19,7 +19,7 @@ export const offices = [
   {
     name: "India",
     address:
-      "Rattha Tek Meadows, Ground Floor, Tower A, No: 51, Rajiv Gandhi Salai, Sholinganallur, Chennai, Tamil Nadu 600119, India",
+      "Rattha Tek Meadows, 4th Floor, Tower C, No: 51, Rajiv Gandhi Salai, Sholinganallur, Chennai, Tamil Nadu 600119, India",
   },
 ];
 
