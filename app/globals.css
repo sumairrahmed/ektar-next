@@ -348,6 +348,12 @@ textarea.input { min-height: 110px; resize: vertical; }
 }
 .mobilenav.open { grid-template-rows: 1fr; }
 .mobilenav-inner { min-height: 0; overflow: hidden; }
+/* Long menu scrolls on its own; overscroll-behavior stops it chaining to the page behind. */
+.mobilenav.open .mobilenav-inner {
+  overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+  max-height: calc(100vh - var(--topbar-h, 64px));
+  max-height: calc(100dvh - var(--topbar-h, 64px));
+}
 .mobilenav-list { display: flex; flex-direction: column; padding: 8px var(--edge) calc(1.4 * var(--leading)); }
 .mobilenav-list a {
   display: block; padding: 14px 2px; font-size: 15.5px; font-weight: 500; color: var(--dim);

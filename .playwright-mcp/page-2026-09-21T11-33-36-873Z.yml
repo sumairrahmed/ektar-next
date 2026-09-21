@@ -1,0 +1,318 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Ektar home" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Ektar" [ref=e4]
+    - button "Toggle theme" [ref=e5] [cursor=pointer]
+    - link "Book a demo" [ref=e8] [cursor=pointer]:
+      - /url: /contact
+    - button "Open menu" [ref=e9] [cursor=pointer]
+    - navigation [ref=e12]:
+      - link "Home" [ref=e14] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e15]:
+        - link "Protect the User" [ref=e16] [cursor=pointer]:
+          - /url: /protect-the-user
+        - link "ekShield" [ref=e17] [cursor=pointer]:
+          - /url: /ekshield
+        - link "ekKey" [ref=e18] [cursor=pointer]:
+          - /url: /ekkey
+        - link "ekSign" [ref=e19] [cursor=pointer]:
+          - /url: /eksign
+        - link "ekPulse" [ref=e20] [cursor=pointer]:
+          - /url: /ekpulse
+      - generic [ref=e21]:
+        - link "Protect the Device" [ref=e22] [cursor=pointer]:
+          - /url: /protect-the-device
+        - link "ekBind" [ref=e23] [cursor=pointer]:
+          - /url: /ekbind
+        - link "ekProtect" [ref=e24] [cursor=pointer]:
+          - /url: /ekprotect
+        - link "ekShield" [ref=e25] [cursor=pointer]:
+          - /url: /ekshield
+      - generic [ref=e26]:
+        - link "Protect the App" [ref=e27] [cursor=pointer]:
+          - /url: /protect-the-app
+        - link "ekProtect" [ref=e28] [cursor=pointer]:
+          - /url: /ekprotect
+        - link "ekPulse" [ref=e29] [cursor=pointer]:
+          - /url: /ekpulse
+      - link "About" [ref=e31] [cursor=pointer]:
+        - /url: /about
+      - link "Book a demo" [ref=e32] [cursor=pointer]:
+        - /url: /contact
+  - generic [ref=e33]:
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - paragraph [ref=e39]: Digital security for banks
+        - paragraph [ref=e41]:
+          - text: Protect
+          - generic [ref=e44]:
+            - emphasis [ref=e45]: the User
+            - emphasis [ref=e46]: the App
+            - emphasis [ref=e47]: the Device
+            - emphasis [ref=e48]: the User
+        - heading "Stop fraud at every real entry point" [level=1] [ref=e50]:
+          - generic [ref=e51]: Stop fraud at every
+          - emphasis [ref=e53]: real entry point
+        - paragraph [ref=e54]: Ektar protects the user, the device, and the app — Built by ex-bankers who've run the channels they now secure.
+        - generic [ref=e55]:
+          - link "Book a demo" [ref=e56] [cursor=pointer]:
+            - /url: /contact
+          - link "See the suite" [ref=e57] [cursor=pointer]:
+            - /url: "#solutions"
+      - generic [ref=e63]:
+        - generic [ref=e64]: 09:41
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - paragraph [ref=e72]: Protect the user
+            - paragraph [ref=e73]: Login attempt
+            - generic [ref=e77]:
+              - text: Customer verified
+              - generic [ref=e78]: Device-bound · no code sent
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - text: SMS OTP replay
+                - generic [ref=e82]: blocked
+              - generic [ref=e83]:
+                - text: Call-centre impersonation
+                - generic [ref=e85]: challenged
+          - generic [ref=e86]:
+            - paragraph [ref=e87]: Protect the app
+            - paragraph [ref=e88]: Runtime check
+            - generic [ref=e92]:
+              - text: App verified
+              - generic [ref=e93]: No tampering detected
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - text: Overlay attack
+                - generic [ref=e97]: blocked
+              - generic [ref=e98]:
+                - text: Remote access tool
+                - generic [ref=e100]: suspended
+          - generic [ref=e101]:
+            - paragraph [ref=e102]: Protect the device
+            - paragraph [ref=e103]: Session check
+            - generic [ref=e107]:
+              - text: Device bound
+              - generic [ref=e108]: Same phone · same SIM
+            - generic [ref=e109]:
+              - generic [ref=e110]:
+                - text: SIM swap attempt
+                - generic [ref=e112]: blocked
+              - generic [ref=e113]:
+                - text: Rooted device
+                - generic [ref=e115]: denied
+    - generic [ref=e117]:
+      - generic [ref=e118]: The trust suite
+      - heading "One suite. Seven products, one engine." [level=2] [ref=e119]
+      - paragraph [ref=e120]: Each product is licensed on its own — deploy one or all seven, and the portals, APIs and SDKs behave the same either way. The whole suite runs inside your own infrastructure, with no runtime dependency on Ektar.
+      - generic [ref=e121]:
+        - link "01 ekShield Authentication Replaces one-time codes with a login that can't be phished." [ref=e122] [cursor=pointer]:
+          - /url: /ekshield
+          - generic [ref=e123]: "01"
+          - generic [ref=e124]: ekShield
+          - generic [ref=e125]: Authentication
+          - paragraph [ref=e126]: Replaces one-time codes with a login that can't be phished.
+        - link "02 ekProtect Device & app integrity Spots malware, fake screens, and compromised phones in real time." [ref=e127] [cursor=pointer]:
+          - /url: /ekprotect
+          - generic [ref=e128]: "02"
+          - generic [ref=e129]: ekProtect
+          - generic [ref=e130]: Device & app integrity
+          - paragraph [ref=e131]: Spots malware, fake screens, and compromised phones in real time.
+        - link "03 ekBind SIM & network trust Catches a SIM swap before a transaction goes through." [ref=e132] [cursor=pointer]:
+          - /url: /ekbind
+          - generic [ref=e133]: "03"
+          - generic [ref=e134]: ekBind
+          - generic [ref=e135]: SIM & network trust
+          - paragraph [ref=e136]: Catches a SIM swap before a transaction goes through.
+        - link "04 ekSign Document signing Signed documents that can't be altered after the fact, right inside your app." [ref=e137] [cursor=pointer]:
+          - /url: /eksign
+          - generic [ref=e138]: "04"
+          - generic [ref=e139]: ekSign
+          - generic [ref=e140]: Document signing
+          - paragraph [ref=e141]: Signed documents that can't be altered after the fact, right inside your app.
+        - link "05 ekKey Passkeys Login without a password at all, tied to the customer's own device." [ref=e142] [cursor=pointer]:
+          - /url: /ekkey
+          - generic [ref=e143]: "05"
+          - generic [ref=e144]: ekKey
+          - generic [ref=e145]: Passkeys
+          - paragraph [ref=e146]: Login without a password at all, tied to the customer's own device.
+        - link "06 ekPulse Behavioural biometrics Learns how a real customer types and moves, and flags when it isn't them." [ref=e147] [cursor=pointer]:
+          - /url: /ekpulse
+          - generic [ref=e148]: "06"
+          - generic [ref=e149]: ekPulse
+          - generic [ref=e150]: Behavioural biometrics
+          - paragraph [ref=e151]: Learns how a real customer types and moves, and flags when it isn't them.
+        - 'link "07 ekRules Risk decisioning Takes every signal above and makes one real-time call: allow, verify further, or block." [ref=e152] [cursor=pointer]':
+          - /url: /ekrules
+          - generic [ref=e153]: "07"
+          - generic [ref=e154]: ekRules
+          - generic [ref=e155]: Risk decisioning
+          - paragraph [ref=e156]: "Takes every signal above and makes one real-time call: allow, verify further, or block."
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - generic [ref=e160]: Live
+          - generic [ref=e161]: At 2 top-tier UAE banks
+        - generic [ref=e162]:
+          - generic [ref=e163]: Contracted
+          - generic [ref=e164]: With a top-3 Oman bank
+        - generic [ref=e165]:
+          - generic [ref=e166]: Secured
+          - generic [ref=e167]: Over 10 million authentications
+        - generic [ref=e168]:
+          - generic [ref=e169]: Aligned with
+          - generic [ref=e170]: CBUAE · RBI · SAMA · FIDO
+      - generic [ref=e172]: 9c4e f17b a208 31dd 04af 7b21 e5c9 3f9a c2e1 88d0 5b6e a417 f0c3 92bb 7de4 1a58 · ecdsa p-256 · sha-256 · fido2 · device-bound · 9c4e f17b a208 31dd 04af 7b21 e5c9 3f9a c2e1 88d0 5b6e a417 f0c3 92bb 7de4 1a58 · ecdsa p-256 · sha-256 · fido2 · device-bound ·
+      - generic [ref=e174]:
+        - generic [ref=e175]: How Ektar protects you
+        - heading "Three places fraud gets in. We close all three." [level=2] [ref=e176]
+        - paragraph [ref=e177]: Every attack on a banking app is really an attack on one of three things — the customer, their phone, or the app itself.
+        - generic [ref=e178]:
+          - paragraph [ref=e183]:
+            - text: Protect the
+            - generic [ref=e184]: user
+          - generic [ref=e185]:
+            - heading "ekShield · ekKey · ekPulse · ekSign" [level=3] [ref=e186]
+            - paragraph [ref=e187]: A login that can't be phished, copied, or intercepted — closing the door on stolen one-time codes and call-centre scams.
+            - list [ref=e188]:
+              - listitem [ref=e189]: Stolen SMS OTP
+              - listitem [ref=e190]: Phishing and fake login pages
+              - listitem [ref=e191]: Call-centre social engineering
+              - listitem [ref=e192]: Deepfakes and synthetic identities
+          - link "Open →" [ref=e195] [cursor=pointer]:
+            - /url: /protect-the-user
+        - generic [ref=e196]:
+          - paragraph [ref=e200]:
+            - text: Protect the
+            - generic [ref=e201]: device
+          - generic [ref=e202]:
+            - heading "ekBind · ekProtect · ekShield" [level=3] [ref=e203]
+            - paragraph [ref=e204]: Confirming it's really your customer's phone and number — catching a SIM swap or a hijacked session before money moves.
+            - list [ref=e205]:
+              - listitem [ref=e206]: SIM swap and re-issue
+              - listitem [ref=e207]: Hijacked sessions
+              - listitem [ref=e208]: Rooted and jailbroken phones
+          - link "Open →" [ref=e210] [cursor=pointer]:
+            - /url: /protect-the-device
+        - generic [ref=e211]:
+          - paragraph [ref=e217]:
+            - text: Protect the
+            - generic [ref=e218]: app
+          - generic [ref=e219]:
+            - heading "ekProtect · ekPulse" [level=3] [ref=e220]
+            - paragraph [ref=e221]: Watching for malware, fake overlay screens, and tampering hiding inside the app itself.
+            - list [ref=e222]:
+              - listitem [ref=e223]: Fake overlay screens
+              - listitem [ref=e224]: Malware inside the app
+              - listitem [ref=e225]: Repackaging and tampering
+              - listitem [ref=e226]: Debuggers and hooking
+              - listitem [ref=e227]: Remote access tools
+          - link "Open →" [ref=e229] [cursor=pointer]:
+            - /url: /protect-the-app
+        - generic [ref=e231]:
+          - paragraph [ref=e232]: One decision engine
+          - paragraph [ref=e233]: "One engine — ekRules — takes signals from all three and decides in real time: allow, verify further, or block."
+      - generic [ref=e236]:
+        - generic [ref=e237]: Why now
+        - heading "Regulators are ordering the upgrade" [level=2] [ref=e238]
+        - paragraph [ref=e239]: Across the Gulf, South Asia, and Southeast Asia, SMS OTP is being banned outright — with hard deadlines.
+        - generic [ref=e240]:
+          - paragraph [ref=e243]:
+            - strong [ref=e244]: UAE.
+            - text: SMS OTP banned. Banks must move to in-app verification and passkeys by March 2026.
+          - paragraph [ref=e247]:
+            - strong [ref=e248]: Saudi Arabia.
+            - text: Device-bound login required. Fines of up to SAR 5 million per breach.
+          - paragraph [ref=e251]:
+            - strong [ref=e252]: India.
+            - text: Banks can no longer rely on SMS OTP alone for high-risk transactions.
+          - paragraph [ref=e255]:
+            - strong [ref=e256]: Singapore & Philippines.
+            - text: SMS OTP is being phased out for retail banking.
+      - generic [ref=e258]:
+        - generic [ref=e259]: Why it matters
+        - heading "Fraud has outgrown yesterday's defences" [level=2] [ref=e260]
+        - generic [ref=e261]:
+          - generic [ref=e262]:
+            - paragraph [ref=e263]: Data / 01
+            - paragraph [ref=e264]: $485B
+            - paragraph [ref=e265]: Lost to banking fraud
+            - paragraph [ref=e266]: $485 billion lost to banking fraud in a single year.
+          - generic [ref=e267]:
+            - paragraph [ref=e268]: Data / 02
+            - paragraph [ref=e269]: 93%
+            - paragraph [ref=e270]: Still on SMS OTP
+            - paragraph [ref=e271]: 93% of banks still rely on SMS OTP — the method regulators are banning.
+          - generic [ref=e272]:
+            - paragraph [ref=e273]: Data / 03
+            - paragraph [ref=e274]: +12x
+            - paragraph [ref=e275]: AI-generated fraud
+            - paragraph [ref=e276]: AI-generated fraud is up more than 12x in the last year alone.
+    - generic [ref=e278]:
+      - heading "Every bank in these markets has a deadline. Let's talk about yours." [level=3] [ref=e279]
+      - link "Book a demo" [ref=e281] [cursor=pointer]:
+        - /url: /contact
+  - contentinfo [ref=e282]:
+    - generic [ref=e283]:
+      - generic [ref=e284]:
+        - generic [ref=e285]:
+          - heading "Products" [level=4] [ref=e286]
+          - link "ekShield" [ref=e287] [cursor=pointer]:
+            - /url: /ekshield
+          - link "ekProtect" [ref=e288] [cursor=pointer]:
+            - /url: /ekprotect
+          - link "ekBind" [ref=e289] [cursor=pointer]:
+            - /url: /ekbind
+          - link "ekSign" [ref=e290] [cursor=pointer]:
+            - /url: /eksign
+          - link "ekSell" [ref=e291] [cursor=pointer]:
+            - /url: /eksell
+          - link "ekKey" [ref=e292] [cursor=pointer]:
+            - /url: /ekkey
+          - link "ekPulse" [ref=e293] [cursor=pointer]:
+            - /url: /ekpulse
+          - link "ekRules" [ref=e294] [cursor=pointer]:
+            - /url: /ekrules
+        - generic [ref=e295]:
+          - heading "Company" [level=4] [ref=e296]
+          - link "About us" [ref=e297] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=e298] [cursor=pointer]:
+            - /url: /blog
+          - link "Careers" [ref=e299] [cursor=pointer]:
+            - /url: /career
+          - link "Investors" [ref=e300] [cursor=pointer]:
+            - /url: /investors
+          - link "Contact" [ref=e301] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e302]:
+          - heading "Contact" [level=4] [ref=e303]
+          - link "Talk to us" [ref=e304] [cursor=pointer]:
+            - /url: /contact
+          - link "LinkedIn" [ref=e305] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/ektar-technologies/
+          - link "YouTube" [ref=e306] [cursor=pointer]:
+            - /url: https://www.youtube.com/@ektar-technologies
+      - generic [ref=e307]:
+        - generic [ref=e308]: © Ektar 2022–2026. All rights reserved.
+        - generic [ref=e309]:
+          - link "Terms of Use" [ref=e310] [cursor=pointer]:
+            - /url: /termsofuse
+          - text: ·
+          - link "Privacy Policy" [ref=e311] [cursor=pointer]:
+            - /url: /privacy-policy
+      - generic [ref=e312]:
+        - generic [ref=e313]:
+          - heading "Singapore" [level=5] [ref=e314]
+          - img "Ektar Singapore office" [ref=e315]
+          - paragraph [ref=e316]: "18 Boon Lay Way #05-95 Tradehub 21, Singapore 609966"
+        - generic [ref=e317]:
+          - heading "UAE" [level=5] [ref=e318]
+          - img "Ektar UAE office" [ref=e319]
+          - paragraph [ref=e320]: Ektar Technologies LLC, 606, Latifa Towers, Near World Trade Center, Dubai, UAE
+        - generic [ref=e321]:
+          - heading "India" [level=5] [ref=e322]
+          - img "Ektar India office" [ref=e323]
+          - paragraph [ref=e324]: "Rattha Tek Meadows, 4th Floor, Tower C, No: 51, Rajiv Gandhi Salai, Sholinganallur, Chennai, Tamil Nadu 600119, India"

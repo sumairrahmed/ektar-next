@@ -85,6 +85,7 @@ const STATUS_BY_PATH: Record<string, string> = {
 export default function Topbar() {
   const pathname = usePathname();
   const statusLabel = STATUS_BY_PATH[pathname] ?? "Systems live";
+  const headerRef = useRef<HTMLElement>(null);
   const navRef = useRef<HTMLElement>(null);
   const blockRef = useRef<HTMLDivElement>(null);
   const keyRef = useRef<HTMLSpanElement>(null);
@@ -113,6 +114,33 @@ export default function Topbar() {
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
+  }, [mobileOpen]);
+
+  // While the mobile menu is open, lock the page behind it so touch-scrolling
+  // moves the menu (which scrolls itself, see .mobilenav-inner) rather than the
+  // content underneath. --topbar-h lets the CSS cap the menu to the space below
+  // the header. Also close it if the viewport grows past the mobile breakpoint,
+  // where the menu is hidden and the lock would otherwise be left stuck on.
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const header = headerRef.current;
+    const mq = window.matchMedia("(min-width: 901px)");
+    const prevOverflow = document.body.style.overflow;
+    function measure() {
+      if (header) header.style.setProperty("--topbar-h", header.offsetHeight + "px");
+    }
+    function onBreakpoint(e: MediaQueryListEvent) {
+      if (e.matches) setMobileOpen(false);
+    }
+    measure();
+    document.body.style.overflow = "hidden";
+    window.addEventListener("resize", measure);
+    mq.addEventListener("change", onBreakpoint);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener("resize", measure);
+      mq.removeEventListener("change", onBreakpoint);
+    };
   }, [mobileOpen]);
 
   // Magnetic block — measures/targets top-level items only (a.top), using
@@ -206,7 +234,7 @@ export default function Topbar() {
 
   return (
     <>
-      <header className="topbar">
+      <header className="topbar" ref={headerRef}>
         <Link href="/" aria-label="Ektar home">
           <Image src="/ektar-logo.png" alt="Ektar" width={72} height={20} priority />
         </Link>
